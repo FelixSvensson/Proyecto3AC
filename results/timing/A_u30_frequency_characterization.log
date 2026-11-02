@@ -1,0 +1,27 @@
+STA_fixed_A_p100_u30_v2_resume_p100_20261102T035345660749Z True 43.31543601956613
+STA_fixed_A_p100_u30_v2_resume_p59_20261102T035410673901Z True 2.315442125792935
+STA_fixed_A_p100_u30_v2_resume_p29_20261102T035434098016Z False -27.68457186301757
+STA_fixed_A_p100_u30_v2_resume_p44_20261102T035500886995Z False -12.684570197682987
+STA_fixed_A_p100_u30_v2_resume_p51_20261102T035527702480Z False -5.684572973240627
+STA_fixed_A_p100_u30_v2_resume_p55_20261102T035557933213Z False -1.6845725291514044
+STA_fixed_A_p100_u30_v2_resume_p57_20261102T035622935509Z True 0.3154276928932069
+STA_fixed_A_p100_u30_v2_resume_p56_20261102T035649818594Z False -0.6845724181290987
+{
+  "source_run": "A_p100_u30_v2_resume",
+  "method": "fixed routed layout; absolute IO delays unchanged; measured integer-ns bisection",
+  "resolution_ns": 1,
+  "status": "measured",
+  "minimum_passing_period_ns": 57,
+  "adjacent_failing_period_ns": 56,
+  "frequency_mhz": 17.54385964912281,
+  "sampled_periods_ns": [
+    29,
+    44,
+    51,
+    55,
+    56,
+    57,
+    59,
+    100
+  ]
+}

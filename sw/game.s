@@ -5,7 +5,7 @@
 # x2 rodas correctas de 0 a 10
 # x3 suma de ciclos de reaccion de las rondas correctas
 # x4 ciclo de inicio
-# x5 y x6 ciclos transcurridos y la constante 75000000
+# x5 y x6 ciclos transcurridos y la constante 30000000
 # x7 objetivo
 # x8 botones leidos
 # x9 temporal, lecturas del contador y constante
@@ -35,12 +35,12 @@ round_start:
 
     lw   x4, 12(x1)
 
-    lui  x6, 0xEE6b
-    addi x6, x6, 640
+    lui  x6, 0x1C9C
+    addi x6, x6, 896
 
 
 
-wait_three_seconds: #repita hasta que pasen 75000000 ciclos desde el inicio de la ronda
+wait_three_seconds: #repita hasta que pasen 30000000 ciclos desde el inicio de la ronda
 
     lw   x9, 12(x1)
 
@@ -105,11 +105,11 @@ correct_button: #suma los ciclos de la ronda total antes de convertir nada
     add  x3, x3, x10
     addi x11, x0, 0
     add  x14, x10, x0
-    lui  x12, 0x262
-    addi x12, x12, 1440
+    lui  x12, 0xF4
+    addi x12, x12, 576
 
 
-reaction_to_tenths: #divide los ciclos por 2500000 restado de uuna decima con tope de 99
+reaction_to_tenths: #divide los ciclos por 1000000 restado de uuna decima con tope de 99
     bltu x14, x12, reaction_conversion_done
     sub  x14, x14, x12
     addi x11, x11, 1
@@ -158,12 +158,12 @@ game_finished:
     sw   x0, 4(x1)
     addi x11, x0, 0
     add  x14, x3, x0    #apaga los leds , calcula el promedio y lo muestra
-    lui  x12, 0x17D8
-    addi x12, x12, -1984
+    lui  x12, 0x989
+    addi x12, x12, 1664
 
 
 average_to_tenths:
-    bltu x14, x12, average_conversion_done   #divide restando, le quita 2500000 a x14 y le suma 1 en x11 hasta lque lo que queda es menor
+    bltu x14, x12, average_conversion_done   #divide restando, le quita 1000000 a x14 y le suma 1 en x11 hasta lque lo que queda es menor
     sub  x14, x14, x12
     addi x11, x11, 1
     addi x9, x0, 99

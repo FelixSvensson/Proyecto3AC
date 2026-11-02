@@ -1,0 +1,12 @@
+$ /usr/bin/python3 assembler/test_assembler.py
+test_disabled_shift_instruction (__main__.TestAssembler.test_disabled_shift_instruction) ... ok
+test_duplicate_label (__main__.TestAssembler.test_duplicate_label) ... ok
+test_immediate_out_of_range (__main__.TestAssembler.test_immediate_out_of_range) ... ok
+test_invalid_register (__main__.TestAssembler.test_invalid_register) ... ok
+test_unsupported_instruction (__main__.TestAssembler.test_unsupported_instruction) ... ok
+test_valid_program (__main__.TestAssembler.test_valid_program) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.342s
+
+OK

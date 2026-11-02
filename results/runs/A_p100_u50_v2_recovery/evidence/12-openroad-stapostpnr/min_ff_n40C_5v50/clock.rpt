@@ -1,0 +1,42 @@
+Clock: i_Clk
+Sources: i_Clk 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 100.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+i_Clk               100.000000    0.000000 50.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock i_Clk
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+0.817281         network latency u_pochoco.u_core.u_rf._2802_/CLK
+        0.955392 network latency u_pochoco.u_core.u_rf._2981_/CLK
+---------------
+0.817281 0.955392 latency
+        0.138111 skew
+
+fall -> fall
+    min     max
+0.000000 0.000000 source latency
+0.782173         network latency u_pochoco.u_core.u_rf._2802_/CLK
+        0.921023 network latency u_pochoco.u_core.u_rf._2981_/CLK
+---------------
+0.782173 0.921023 latency
+        0.138851 skew
+
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+i_Clk period_min = 19.54 fmax = 51.17

@@ -1,0 +1,27 @@
+{
+  "run": "B_v2_p100_u40_detour_20261102T155443Z",
+  "config": "asic/configs/B_detour_resume.json",
+  "input_state": "results/environment/B_v2_p100_u40_detour_20261102T155443Z_state.json",
+  "a_comparison_run": "A_v2_p100_u40",
+  "comparison_util_pct": 40,
+  "source_sha256": "a97c364b735c2b9f4fbd7ffbdecc4142c352fe8b37ec05aa124acb581a68fe46",
+  "output_sha256": "6e677cde62f322535dce00f0e07b25fea57a86a2fd1378dff1b7c50fbe8f06e6",
+  "removed_physical_wire_nets": [
+    "u_pochoco.u_ram._07185_",
+    "u_pochoco.u_ram._08839_"
+  ],
+  "logical_graph_sha256_before": "c875f55cceb2417ab72a98b7c48e0022d548a17715bd072f7c4cb1215cdea2e1",
+  "logical_graph_sha256_after": "c875f55cceb2417ab72a98b7c48e0022d548a17715bd072f7c4cb1215cdea2e1",
+  "routing_obstruction": {
+    "layer": "Metal3",
+    "bbox_um": [
+      750.82,
+      852.18,
+      751.66,
+      853.02
+    ]
+  },
+  "cause": "Persistent post-antenna Metal3 short at (751.10,852.46)-(751.38,852.74) um",
+  "operation": "Remove two physical dbWire objects in a copy and force a local routing detour; no logical connection or cell placement changed",
+  "required_validation": "DRC Magic, LVS, antenna and nine-corner setup/hold; no closure claimed from this preparation"
+}

@@ -1,0 +1,43 @@
+# Preserve exact artifact bytes independently of core.autocrlf.
+* -text
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Shell scripts remain portable to WSL/Linux.
+*.sh text eol=lf
+.gitattributes text eol=lf
+
+# Preserve the CRLF checkout of original tracked text inputs.
+/.gitignore text eol=crlf
+/Makefile text eol=crlf
+/assembler/assembler.py text eol=crlf
+/assembler/test_assembler.py text eol=crlf
+/goboard.pcf text eol=crlf
+/pochoco_soc.svg text eol=crlf
+/rtl/espino_core/espino_alu.v text eol=crlf
+/rtl/espino_core/espino_controller.v text eol=crlf
+/rtl/espino_core/espino_core.v text eol=crlf
+/rtl/espino_core/espino_decoder.v text eol=crlf
+/rtl/espino_core/espino_id_stage.v text eol=crlf
+/rtl/espino_core/espino_if_stage.v text eol=crlf
+/rtl/espino_core/espino_load_store_unit.v text eol=crlf
+/rtl/espino_core/espino_register_file.v text eol=crlf
+/rtl/game_top.v text eol=crlf
+/rtl/pochoco_periph.v text eol=crlf
+/rtl/pochoco_ram.v text eol=crlf
+/rtl/pochoco_soc.v text eol=crlf
+/rtl/pochoco_spi_slave.v text eol=crlf
+/sim/pochoco_periph_tb.v text eol=crlf
+/sw/7seg.hex text eol=crlf
+/sw/7seg.s text eol=crlf
+/sw/Makefile text eol=crlf
+/sw/blink.hex text eol=crlf
+/sw/blink.s text eol=crlf
+/sw/buttons_leds.hex text eol=crlf
+/sw/buttons_leds.s text eol=crlf
+
+# Binary files also use binary diff/merge handling.
+*.gds binary
+*.pdf binary
+*.png binary
+*.zip binary
+*.gz binary

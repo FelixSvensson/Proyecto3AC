@@ -1,0 +1,80 @@
+{
+  "source_run": "final_A_v2_p100_u40",
+  "period_ns": 59.0,
+  "mode": "fixed routed layout; absolute IO constraints unchanged",
+  "pass_timing": true,
+  "corners": {
+    "max_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 31.000440425486325,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.10850098904220946
+    },
+    "max_ss_125C_4v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 0.45962168705276746,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.8688014997781219
+    },
+    "max_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 26.414785773024445,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.33634429526870674
+    },
+    "min_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 31.479722830593616,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.1073837715809321
+    },
+    "min_ss_125C_4v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 3.6927972835950444,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.8671301699895828
+    },
+    "min_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 27.13274304253742,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.3351380379183362
+    },
+    "nom_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 31.259699713529145,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.10788303888922628
+    },
+    "nom_ss_125C_4v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 2.246086047393868,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.8678702446787286
+    },
+    "nom_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 26.802472111474387,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.33567438667670163
+    }
+  }
+}

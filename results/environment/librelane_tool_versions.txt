@@ -1,0 +1,15 @@
+nix-eda 6.11.0 git revision 8f990fb77529c09e540e453cd836af9930ec58db
+nixpkgs nixos-25.11 git revision b3aad468604d3e488d627c0b43984eb60e75e782
+
+iverilog s20250103-60-gdb82380ce git revision db82380cecf9943fcc397818e6899b7146442127
+klayout 0.30.7 + 2 patches
+magic-vlsi 8.3.623 git revision 8.3.623 + 1 patches
+netgen 1.5.316 git revision 1.5.316
+openroad 2026-02-17 git revision dcf36133a369abc8f3c5e5738cd4d82e4903c0e0 + 1 patches
+openroad-abc 2026-01-04 git revision 4c756ffb8dff7c583e80c7970d117abd3dfddb5c + 1 patches
+opensta 2026-02-14 git revision 857316ff001b2a8dbbdc5996944d08a6d38c87ab + 2 patches
+python3 3.13.9 + 3 patches
+ruby 3.3.10 + 1 patches
+tcl 8.6.16
+verilator 5.044 git revision v5.044
+yosys 0.62

@@ -1,0 +1,463 @@
+[14:55:16] [I] Starting a new run of the 'Classic' flow with the tag flow.py:654
+               'A_p100_u50_v2_20261028T175514Z'.                                
+[14:55:16] [I] Starting…                                       sequential.py:339
+[14:55:16] [V] Running 'Verilator.Lint' at                          step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/01             
+               -verilator-lint'…                                                
+[14:55:17] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/01             
+               -verilator-lint/verilator-lint.log'…                             
+[14:55:18] [V] Running 'Checker.LintTimingConstructs' at            step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/02             
+               -checker-linttimingconstructs'…                                  
+[14:55:18] [I] Check for Lint Timing Errors clear.                checker.py:412
+[14:55:18] [V] Running 'Checker.LintErrors' at                      step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/03             
+               -checker-linterrors'…                                            
+[14:55:18] [I] Check for Lint errors clear.                       checker.py:131
+[14:55:18] [V] Running 'Checker.LintWarnings' at                    step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/04             
+               -checker-lintwarnings'…                                          
+[14:55:18] [W] 14 Lint warnings found.                            checker.py:122
+[14:55:18] [V] Running 'Yosys.JsonHeader' at                        step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/05             
+               -yosys-jsonheader'…                                              
+[14:55:19] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/05             
+               -yosys-jsonheader/yosys-jsonheader.log'…                         
+[14:55:20] [V] Running 'Yosys.Synthesis' at                         step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/06             
+               -yosys-synthesis'…                                               
+[14:55:20] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/06             
+               -yosys-synthesis/yosys-synthesis.log'…                           
+[14:55:41] [V] Parsing synthesis checks…                            pyosys.py:59
+[14:55:41] [V] Parsing synthesis checks…                            pyosys.py:59
+[14:55:41] [V] Running 'Checker.YosysUnmappedCells' at              step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/07             
+               -checker-yosysunmappedcells'…                                    
+[14:55:41] [I] Check for Unmapped Yosys instances clear.          checker.py:131
+[14:55:41] [V] Running 'Checker.YosysSynthChecks' at                step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/08             
+               -checker-yosyssynthchecks'…                                      
+[14:55:41] [I] Check for Yosys check errors clear.                checker.py:131
+[14:55:41] [V] Running 'Checker.NetlistAssignStatements' at         step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/09             
+               -checker-netlistassignstatements'…                               
+[14:55:41] [V] Running 'OpenROAD.CheckSDCFiles' at                  step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/10             
+               -openroad-checksdcfiles'…                                        
+[14:55:41] [W] 'PNR_SDC_FILE' is not defined. Using generic      openroad.py:184
+               fallback SDC for OpenROAD PnR steps.                             
+[14:55:41] [W] 'SIGNOFF_SDC_FILE' is not defined. Using generic  openroad.py:188
+               fallback SDC for OpenROAD PnR steps.                             
+[14:55:41] [V] Running 'OpenROAD.CheckMacroInstances' at            step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/11             
+               -openroad-checkmacroinstances'…                                  
+[14:55:42] [I] No macros found, skipping instance check…         openroad.py:694
+[14:55:42] [V] Running 'OpenROAD.STAPrePNR' at                      step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/12             
+               -openroad-staprepnr'…                                            
+[14:55:42] [I] Starting STA for the nom_tt_025C_5v00 timing      openroad.py:749
+               corner…                                                          
+[14:55:42] [I] Starting STA for the nom_ss_125C_4v50 timing      openroad.py:749
+               corner…                                                          
+[14:55:42] [I] Starting STA for the nom_ff_n40C_5v50 timing      openroad.py:749
+               corner…                                                          
+[14:55:42] [I] Skipping corner min_tt_025C_5v00 for STA          openroad.py:787
+               (identical to nom_tt_025C_5v00 at this stage)…                   
+[14:55:42] [I] Skipping corner min_ss_125C_4v50 for STA          openroad.py:787
+               (identical to nom_ss_125C_4v50 at this stage)…                   
+[14:55:42] [I] Skipping corner min_ff_n40C_5v50 for STA          openroad.py:787
+               (identical to nom_ff_n40C_5v50 at this stage)…                   
+[14:55:42] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/12             
+               -openroad-staprepnr/nom_tt_025C_5v00/sta.log'…                   
+[14:55:42] [I] Skipping corner max_tt_025C_5v00 for STA          openroad.py:787
+               (identical to nom_tt_025C_5v00 at this stage)…                   
+[14:55:42] [I] Skipping corner max_ss_125C_4v50 for STA          openroad.py:787
+               (identical to nom_ss_125C_4v50 at this stage)…                   
+[14:55:42] [I] Skipping corner max_ff_n40C_5v50 for STA          openroad.py:787
+               (identical to nom_ff_n40C_5v50 at this stage)…                   
+[14:55:42] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/12             
+               -openroad-staprepnr/nom_ss_125C_4v50/sta.log'…                   
+[14:55:42] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/12             
+               -openroad-staprepnr/nom_ff_n40C_5v50/sta.log'…                   
+[14:55:49] [I] Finished STA for the nom_ff_n40C_5v50 timing      openroad.py:764
+               corner.                                                          
+[14:55:49] [I] Finished STA for the nom_tt_025C_5v00 timing      openroad.py:764
+               corner.                                                          
+[14:55:50] [I] Finished STA for the nom_ss_125C_4v50 timing      openroad.py:764
+               corner.                                                          
+[14:55:50] [V] Running 'OpenROAD.Floorplan' at                      step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/13             
+               -openroad-floorplan'…                                            
+[14:55:50] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/13             
+               -openroad-floorplan/openroad-floorplan.log'…                     
+[14:55:53] [V] Running 'OpenROAD.DumpRCValues' at                   step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/14             
+               -openroad-dumprcvalues'…                                         
+[14:55:53] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/14             
+               -openroad-dumprcvalues/openroad-dumprcvalues.log'…               
+[14:55:54] [V] Running 'Odb.CheckMacroAntennaProperties' at         step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/15             
+               -odb-checkmacroantennaproperties'…                               
+[14:55:54] [I] No cells provided, skipping                            odb.py:234
+               'Odb.CheckMacroAntennaProperties'…                               
+[14:55:54] [V] Running 'Odb.SetPowerConnections' at                 step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/16             
+               -odb-setpowerconnections'…                                       
+[14:55:54] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/16             
+               -odb-setpowerconnections/odb-setpowerconnections.log             
+               '…                                                               
+[14:55:55] [V] Running 'Odb.ManualMacroPlacement' at                step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/17             
+               -odb-manualmacroplacement'…                                      
+[14:55:55] [I] No instances found, skipping                           odb.py:468
+               'Odb.ManualMacroPlacement'…                                      
+[14:55:55] [V] Running 'OpenROAD.CutRows' at                        step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/18             
+               -openroad-cutrows'…                                              
+[14:55:55] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/18             
+               -openroad-cutrows/openroad-cutrows.log'…                         
+[14:55:56] [V] Running 'OpenROAD.TapEndcapInsertion' at             step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/19             
+               -openroad-tapendcapinsertion'…                                   
+[14:55:56] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/19             
+               -openroad-tapendcapinsertion/openroad-tapendcapinser             
+               tion.log'…                                                       
+[14:55:58] [V] Running 'Odb.AddPDNObstructions' at                  step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/20             
+               -odb-addpdnobstructions'…                                        
+[14:55:58] [I] 'PDN_OBSTRUCTIONS' is not defined. Skipping            odb.py:589
+               'Odb.AddPDNObstructions'…                                        
+[14:55:58] [V] Running 'OpenROAD.GeneratePDN' at                    step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/21             
+               -openroad-generatepdn'…                                          
+[14:55:58] [I] 'PDN_CFG' not explicitly set, setting it to      openroad.py:1483
+               /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-pyth                 
+               on3-3.13.9-env/lib/python3.13/site-packages/libr                 
+               elane/scripts/openroad/common/pdn_cfg.tcl…                       
+[14:55:59] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/21             
+               -openroad-generatepdn/openroad-generatepdn.log'…                 
+[14:56:01] [V] Running 'Odb.RemovePDNObstructions' at               step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/22             
+               -odb-removepdnobstructions'…                                     
+[14:56:01] [I] 'PDN_OBSTRUCTIONS' is not defined. Skipping            odb.py:589
+               'Odb.RemovePDNObstructions'…                                     
+[14:56:01] [V] Running 'Odb.AddRoutingObstructions' at              step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/23             
+               -odb-addroutingobstructions'…                                    
+[14:56:01] [I] 'ROUTING_OBSTRUCTIONS' is not defined. Skipping        odb.py:589
+               'Odb.AddRoutingObstructions'…                                    
+[14:56:01] [V] Running 'OpenROAD.GlobalPlacementSkipIO' at          step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/24             
+               -openroad-globalplacementskipio'…                                
+[14:56:01] [I] 'PL_TARGET_DENSITY_PCT' not explicitly set,      openroad.py:1583
+               using dynamically calculated target density:                     
+               63.578300…                                                       
+[14:56:01] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/24             
+               -openroad-globalplacementskipio/openroad-globalplace             
+               mentskipio.log'…                                                 
+[14:56:04] [V] Running 'OpenROAD.IOPlacement' at                    step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/25             
+               -openroad-ioplacement'…                                          
+[14:56:04] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/25             
+               -openroad-ioplacement/openroad-ioplacement.log'…                 
+[14:56:06] [V] Running 'Odb.CustomIOPlacement' at                   step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/26             
+               -odb-customioplacement'…                                         
+[14:56:06] [I] No custom I/O placement file configured, skipping      odb.py:718
+               'Odb.CustomIOPlacement'…                                         
+[14:56:06] [V] Running 'Odb.ApplyDEFTemplate' at                    step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/27             
+               -odb-applydeftemplate'…                                          
+[14:56:06] [I] No DEF template provided, skipping                     odb.py:302
+               'Odb.ApplyDEFTemplate'…                                          
+[14:56:06] [V] Running 'OpenROAD.GlobalPlacement' at                step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/28             
+               -openroad-globalplacement'…                                      
+[14:56:06] [I] 'PL_TARGET_DENSITY_PCT' not explicitly set,      openroad.py:1583
+               using dynamically calculated target density:                     
+               63.578300…                                                       
+[14:56:06] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/28             
+               -openroad-globalplacement/openroad-globalplacement.l             
+               og'…                                                             
+[14:56:10] [V] Running 'Odb.WriteVerilogHeader' at                  step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/29             
+               -odb-writeverilogheader'…                                        
+[14:56:10] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/29             
+               -odb-writeverilogheader/odb-writeverilogheader.log'…             
+[14:56:11] [V] Running 'Checker.PowerGridViolations' at             step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/30             
+               -checker-powergridviolations'…                                   
+[14:56:11] [I] Check for power grid violations (as reported by    checker.py:131
+               OpenROAD PSM- you may ignore these if LVS passes)                
+               clear.                                                           
+[14:56:11] [V] Running 'OpenROAD.STAMidPNR' at                      step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/31             
+               -openroad-stamidpnr'…                                            
+[14:56:11] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/31             
+               -openroad-stamidpnr/openroad-stamidpnr.log'…                     
+[14:56:20] [V] Running 'OpenROAD.RepairDesignPostGPL' at            step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/32             
+               -openroad-repairdesignpostgpl'…                                  
+[14:56:20] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/32             
+               -openroad-repairdesignpostgpl/openroad-repairdesignp             
+               ostgpl.log'…                                                     
+[14:56:21] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[14:56:21] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[14:56:22] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[14:56:23] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[14:56:24] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[14:56:24] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[14:56:39] [W] [RSZ-0020] found 2 floating nets.                 openroad.py:314
+[14:56:42] [V] Running 'Odb.ManualGlobalPlacement' at               step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/33             
+               -odb-manualglobalplacement'…                                     
+[14:56:42] [I] 'MANUAL_GLOBAL_PLACEMENTS' not set. Skipping          odb.py:1033
+               'Odb.ManualGlobalPlacement'…                                     
+[14:56:42] [V] Running 'OpenROAD.DetailedPlacement' at              step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/34             
+               -openroad-detailedplacement'…                                    
+[14:56:42] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/34             
+               -openroad-detailedplacement/openroad-detailedplaceme             
+               nt.log'…                                                         
+[14:56:45] [V] Running 'OpenROAD.CTS' at                            step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/35             
+               -openroad-cts'…                                                  
+[14:56:45] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/35             
+               -openroad-cts/openroad-cts.log'…                                 
+[14:56:46] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[14:56:47] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[14:56:48] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[14:56:48] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[14:56:49] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[14:56:49] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[14:57:07] [V] Running 'OpenROAD.STAMidPNR-1' at                    step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/36             
+               -openroad-stamidpnr-1'…                                          
+[14:57:07] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/36             
+               -openroad-stamidpnr-1/openroad-stamidpnr-1.log'…                 
+[14:57:22] [V] Running 'OpenROAD.ResizerTimingPostCTS' at           step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/37             
+               -openroad-resizertimingpostcts'…                                 
+[14:57:22] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/37             
+               -openroad-resizertimingpostcts/openroad-resizertimin             
+               gpostcts.log'…                                                   
+[14:57:25] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[14:57:26] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[14:57:28] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[14:57:29] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[14:57:30] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[14:57:31] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[14:57:51] [V] Running 'OpenROAD.STAMidPNR-2' at                    step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/38             
+               -openroad-stamidpnr-2'…                                          
+[14:57:51] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/38             
+               -openroad-stamidpnr-2/openroad-stamidpnr-2.log'…                 
+[14:58:02] [V] Running 'OpenROAD.GlobalRouting' at                  step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/39             
+               -openroad-globalrouting'…                                        
+[14:58:02] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/39             
+               -openroad-globalrouting/openroad-globalrouting.log'…             
+[14:58:04] [V] Running 'OpenROAD.CheckAntennas' at                  step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/40             
+               -openroad-checkantennas'…                                        
+[14:58:04] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/40             
+               -openroad-checkantennas/openroad-checkantennas.log'…             
+[14:58:09] [I] Gating variable for step                        sequential.py:362
+               'OpenROAD.RepairDesignPostGRT' set to 'False'-                   
+               the step will be skipped.                                        
+[14:58:09] [I] Skipping step 'Repair Design (Post-Global       sequential.py:370
+               Routing)'…                                                       
+[14:58:09] [V] Running 'Odb.DiodesOnPorts' at                       step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/41             
+               -odb-diodesonports'…                                             
+[14:58:09] [I] 'DIODE_ON_PORTS' is set to 'none': skipping            odb.py:820
+               'Odb.DiodesOnPorts'…                                             
+[14:58:09] [I] Gating variable for step                        sequential.py:362
+               'Odb.HeuristicDiodeInsertion' set to 'False'-                    
+               the step will be skipped.                                        
+[14:58:09] [I] Skipping step 'Heuristic Diode Insertion'…      sequential.py:370
+[14:58:09] [V] Running 'OpenROAD.RepairAntennas' at                 step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/42             
+               -openroad-repairantennas'…                                       
+[14:58:09] [V] Running 'OpenROAD.DiodeInsertion' at                 step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/42             
+               -openroad-repairantennas/1-openroad-diodeinsertion'…             
+[14:58:09] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/42             
+               -openroad-repairantennas/1-openroad-diodeinsertion/o             
+               penroad-diodeinsertion.log'…                                     
+[14:58:26] [V] Running 'OpenROAD.CheckAntennas' at                  step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/42             
+               -openroad-repairantennas/2-openroad-checkantennas'…              
+[14:58:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/42             
+               -openroad-repairantennas/2-openroad-checkantennas/op             
+               enroad-checkantennas.log'…                                       
+[14:58:32] [I] Gating variable for step                        sequential.py:362
+               'OpenROAD.ResizerTimingPostGRT' set to 'False'-                  
+               the step will be skipped.                                        
+[14:58:32] [I] Skipping step 'Resizer Timing Optimizations     sequential.py:370
+               (Post-Global Routing)'…                                          
+[14:58:32] [V] Running 'OpenROAD.STAMidPNR-3' at                    step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/43             
+               -openroad-stamidpnr-3'…                                          
+[14:58:32] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/43             
+               -openroad-stamidpnr-3/openroad-stamidpnr-3.log'…                 
+[14:58:41] [V] Running 'OpenROAD.DetailedRouting' at                step.py:1138
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/44             
+               -openroad-detailedrouting'…                                      
+[14:58:41] [I] Running TritonRoute with 14 threads…             openroad.py:2004
+[14:58:41] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u50_v2_20261028T175514Z/44             
+               -openroad-detailedrouting/openroad-detailedrouting.l             
+               og'…                                                             
+[14:58:42] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via1                           
+[14:58:42] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via1                           
+[14:58:42] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via2                           
+[14:58:42] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via2                           
+[14:58:42] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via3                           
+[14:58:42] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via3                           
+[14:58:42] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via4                           
+[14:58:42] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via4                           

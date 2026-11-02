@@ -1,0 +1,13 @@
+{
+  "run": "B_p100_u30_v2_resume_20261102T153658Z",
+  "config": "asic/configs/B_p100_u30.json",
+  "a_comparison_run": "A_p100_u30_v2_resume",
+  "synthesis_source_run": "B_p100_u30_v2_20261102T035316Z",
+  "input_state": "results/environment/B_p100_u30_v2_resume_20261102T153658Z_state.json",
+  "predecessor_run": "B_p100_u30_v2_resume_20261102T151832Z",
+  "from_step": "OpenROAD.DetailedRouting",
+  "input_odb": "asic/configs/runs/B_p100_u30_v2_resume_20261102T151832Z/07-openroad-detailedrouting/drt_iter6.odb",
+  "odb_sha256": "f4d09956b91347d6ef3c245d3240d93030f6810d43e6574cd8c93aa7252f815e",
+  "console": "results/environment/B_p100_u30_v2_resume_20261102T153658Z_console.log",
+  "purpose": "Resume after user pause; unchanged 100 ns/30%, default routing, six threads; router reloads wires and reinitializes optimization"
+}

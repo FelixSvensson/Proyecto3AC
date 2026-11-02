@@ -1,0 +1,20 @@
+{
+    "time": {
+        "cpu_time_user": "00:00:10.859",
+        "cpu_time_system": "00:00:01.290",
+        "runtime": "00:00:33.273",
+        "cpu_time_iowait": "00:00:00.000"
+    },
+    "peak_resources": {
+        "cpu_percent": 109.3,
+        "memory_rss": "133MiB",
+        "memory_vms": "148MiB",
+        "threads": 1
+    },
+    "avg_resources": {
+        "cpu_percent": 37.30761904761901,
+        "memory_rss": "117MiB",
+        "memory_vms": "132MiB",
+        "threads": 0.9968253968253968
+    }
+}

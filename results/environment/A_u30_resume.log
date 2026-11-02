@@ -1,0 +1,382 @@
+[14:45:25] [I] Starting a new run of the 'Classic' flow with the tag flow.py:654
+               'A_p100_u30_v2_resume'.                                          
+[14:45:25] [I] Starting…                                       sequential.py:339
+[14:45:25] [I] Skipping step 'Verilator Lint'…                 sequential.py:370
+[14:45:25] [I] Skipping step 'Lint Timing Error Checker'…      sequential.py:370
+[14:45:25] [I] Skipping step 'Lint Errors Checker'…            sequential.py:370
+[14:45:25] [I] Skipping step 'Lint Warnings Checker'…          sequential.py:370
+[14:45:25] [I] Skipping step 'Generate JSON Header'…           sequential.py:370
+[14:45:25] [I] Skipping step 'Synthesis'…                      sequential.py:370
+[14:45:25] [I] Skipping step 'Unmapped Cells Checker'…         sequential.py:370
+[14:45:25] [I] Skipping step 'Yosys Synth Checks'…             sequential.py:370
+[14:45:25] [I] Skipping step 'Netlist Assign Statement         sequential.py:370
+               Checker'…                                                        
+[14:45:25] [I] Skipping step 'Check SDC Files'…                sequential.py:370
+[14:45:25] [I] Skipping step 'Check Macro Instances'…          sequential.py:370
+[14:45:25] [I] Skipping step 'STA (Pre-PnR)'…                  sequential.py:370
+[14:45:25] [I] Skipping step 'Floorplan Init'…                 sequential.py:370
+[14:45:25] [I] Skipping step 'Dump RC Values'…                 sequential.py:370
+[14:45:25] [I] Skipping step 'Check Antenna Properties of      sequential.py:370
+               Macros Pins in Their LEF Views'…                                 
+[14:45:25] [I] Skipping step 'Set Power Connections'…          sequential.py:370
+[14:45:26] [I] Skipping step 'Manual Macro Placement'…         sequential.py:370
+[14:45:26] [I] Skipping step 'Cut Rows'…                       sequential.py:370
+[14:45:26] [I] Skipping step 'Tap/Decap Insertion'…            sequential.py:370
+[14:45:26] [I] Skipping step 'Add PDN obstructions'…           sequential.py:370
+[14:45:26] [I] Skipping step 'Generate PDN'…                   sequential.py:370
+[14:45:26] [I] Skipping step 'Remove PDN obstructions'…        sequential.py:370
+[14:45:26] [I] Skipping step 'Add Obstructions'…               sequential.py:370
+[14:45:26] [I] Skipping step 'Global Placement Skip IO'…       sequential.py:370
+[14:45:26] [I] Skipping step 'I/O Placement'…                  sequential.py:370
+[14:45:26] [I] Skipping step 'Custom I/O Placement'…           sequential.py:370
+[14:45:26] [I] Skipping step 'Apply DEF Template'…             sequential.py:370
+[14:45:26] [I] Skipping step 'Global Placement'…               sequential.py:370
+[14:45:26] [I] Skipping step 'Write Verilog Header'…           sequential.py:370
+[14:45:26] [I] Skipping step 'Power Grid Violation Checker'…   sequential.py:370
+[14:45:26] [I] Skipping step 'STA (Mid-PnR)'…                  sequential.py:370
+[14:45:26] [I] Skipping step 'Repair Design (Post-Global       sequential.py:370
+               Placement)'…                                                     
+[14:45:26] [I] Skipping step 'Manual Global Placement'…        sequential.py:370
+[14:45:26] [I] Skipping step 'Detailed Placement'…             sequential.py:370
+[14:45:26] [I] Skipping step 'Clock Tree Synthesis'…           sequential.py:370
+[14:45:26] [I] Skipping step 'STA (Mid-PnR)'…                  sequential.py:370
+[14:45:26] [I] Skipping step 'Resizer Timing Optimizations     sequential.py:370
+               (Post-Clock Tree Synthesis)'…                                    
+[14:45:26] [I] Skipping step 'STA (Mid-PnR)'…                  sequential.py:370
+[14:45:26] [I] Skipping step 'Global Routing'…                 sequential.py:370
+[14:45:26] [I] Skipping step 'Check Antennas'…                 sequential.py:370
+[14:45:26] [I] Gating variable for step                        sequential.py:362
+               'OpenROAD.RepairDesignPostGRT' set to 'False'-                   
+               the step will be skipped.                                        
+[14:45:26] [I] Skipping step 'Repair Design (Post-Global       sequential.py:370
+               Routing)'…                                                       
+[14:45:26] [I] Skipping step 'Diodes on Ports'…                sequential.py:370
+[14:45:26] [I] Gating variable for step                        sequential.py:362
+               'Odb.HeuristicDiodeInsertion' set to 'False'-                    
+               the step will be skipped.                                        
+[14:45:26] [I] Skipping step 'Heuristic Diode Insertion'…      sequential.py:370
+[14:45:26] [I] Skipping step 'Antenna Repair'…                 sequential.py:370
+[14:45:26] [I] Gating variable for step                        sequential.py:362
+               'OpenROAD.ResizerTimingPostGRT' set to 'False'-                  
+               the step will be skipped.                                        
+[14:45:26] [I] Skipping step 'Resizer Timing Optimizations     sequential.py:370
+               (Post-Global Routing)'…                                          
+[14:45:26] [I] Skipping step 'STA (Mid-PnR)'…                  sequential.py:370
+[14:45:26] [I] Skipping step 'Detailed Routing'…               sequential.py:370
+[14:45:26] [I] Skipping step 'Remove Obstructions'…            sequential.py:370
+[14:45:26] [I] Skipping step 'Check Antennas'…                 sequential.py:370
+[14:45:26] [I] Skipping step 'Routing DRC Checker'…            sequential.py:370
+[14:45:26] [I] Skipping step 'Report Disconnected Pins'…       sequential.py:370
+[14:45:26] [I] Skipping step 'Disconnected Pins Checker'…      sequential.py:370
+[14:45:26] [I] Skipping step 'Report Wire Length'…             sequential.py:370
+[14:45:26] [I] Skipping step 'Wire Length Threshold Checker'…  sequential.py:370
+[14:45:26] [I] Skipping step 'Fill Insertion'…                 sequential.py:370
+[14:45:26] [I] Skipping step 'Generate Cell Frequency Tables'… sequential.py:370
+[14:45:26] [I] Skipping step 'Parasitics (RC) Extraction'…     sequential.py:370
+[14:45:26] [V] Running 'OpenROAD.STAPostPNR' at                     step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr'…                                                     
+[14:45:26] [I] Starting STA for the nom_tt_025C_5v00 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Starting STA for the nom_ss_125C_4v50 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Starting STA for the nom_ff_n40C_5v50 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Starting STA for the min_tt_025C_5v00 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Starting STA for the min_ss_125C_4v50 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/nom_tt_025C_5v00/sta.log'…                            
+[14:45:26] [I] Starting STA for the min_ff_n40C_5v50 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Starting STA for the max_tt_025C_5v00 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Starting STA for the max_ss_125C_4v50 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/nom_ss_125C_4v50/sta.log'…                            
+[14:45:26] [I] Starting STA for the max_ff_n40C_5v50 timing      openroad.py:749
+               corner…                                                          
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/nom_ff_n40C_5v50/sta.log'…                            
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/min_tt_025C_5v00/sta.log'…                            
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/min_ss_125C_4v50/sta.log'…                            
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/min_ff_n40C_5v50/sta.log'…                            
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/max_ss_125C_4v50/sta.log'…                            
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/max_tt_025C_5v00/sta.log'…                            
+[14:45:26] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/max_ff_n40C_5v50/sta.log'…                            
+[14:45:44] [I] Finished STA for the max_ff_n40C_5v50 timing      openroad.py:764
+               corner.                                                          
+[14:45:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/max_ff_n40C_5v50/filter_unannotated.log'…             
+[14:45:44] [I] Finished STA for the max_tt_025C_5v00 timing      openroad.py:764
+               corner.                                                          
+[14:45:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/max_tt_025C_5v00/filter_unannotated.log'…             
+[14:45:44] [I] Finished STA for the min_ff_n40C_5v50 timing      openroad.py:764
+               corner.                                                          
+[14:45:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/min_ff_n40C_5v50/filter_unannotated.log'…             
+[14:45:44] [I] Finished STA for the min_ss_125C_4v50 timing      openroad.py:764
+               corner.                                                          
+[14:45:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/min_ss_125C_4v50/filter_unannotated.log'…             
+[14:45:44] [I] Finished STA for the nom_ss_125C_4v50 timing      openroad.py:764
+               corner.                                                          
+[14:45:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/nom_ss_125C_4v50/filter_unannotated.log'…             
+[14:45:44] [I] Finished STA for the min_tt_025C_5v00 timing      openroad.py:764
+               corner.                                                          
+[14:45:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/min_tt_025C_5v00/filter_unannotated.log'…             
+[14:45:44] [I] Finished STA for the nom_ff_n40C_5v50 timing      openroad.py:764
+               corner.                                                          
+[14:45:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/nom_ff_n40C_5v50/filter_unannotated.log'…             
+[14:45:44] [I] Finished STA for the nom_tt_025C_5v00 timing      openroad.py:764
+               corner.                                                          
+[14:45:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/nom_tt_025C_5v00/filter_unannotated.log'…             
+[14:45:45] [I] Finished STA for the max_ss_125C_4v50 timing      openroad.py:764
+               corner.                                                          
+[14:45:45] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/01-openroad-             
+               stapostpnr/max_ss_125C_4v50/filter_unannotated.log'…             
+[14:45:47] [V] Running 'OpenROAD.IRDropReport' at                   step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/02-openroad-             
+               irdropreport'…                                                   
+[14:45:47] [W] 'VSRC_LOC_FILES' was not given a value, which    openroad.py:2249
+               may make the results of IR drop analysis                         
+               inaccurate. If you are not integrating a                         
+               top-level chip for manufacture, you may ignore                   
+               this warning, otherwise, see the documentation                   
+               for 'VSRC_LOC_FILES'.                                            
+[14:45:48] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/02-openroad-             
+               irdropreport/openroad-irdropreport.log'…                         
+[14:46:09] [V] + analyze_power_grid -net VDD -voltage_file      openroad.py:2261
+               /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/f                 
+               iles-pasted-by-the-user-misi/outputs/Proyecto3AC                 
+               /asic/configs/runs/A_p100_u30_v2_resume/02-openr                 
+               oad-irdropreport/net-VDD.csv                                     
+               [INFO PSM-0040] All shapes on net VDD are                        
+               connected.                                                       
+               ########## IR report #################                           
+               Net              : VDD                                           
+               Corner           : nom_tt_025C_5v00                              
+               Total power      : 8.62e-03 W                                    
+               Supply voltage   : 5.00e+00 V                                    
+               Worstcase voltage: 5.00e+00 V                                    
+               Average voltage  : 5.00e+00 V                                    
+               Average IR drop  : 1.87e-05 V                                    
+               Worstcase IR drop: 1.29e-04 V                                    
+               Percentage drop  : 0.00 %                                        
+               ######################################                           
+               + analyze_power_grid -net VSS -voltage_file                      
+               /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/f                 
+               iles-pasted-by-the-user-misi/outputs/Proyecto3AC                 
+               /asic/configs/runs/A_p100_u30_v2_resume/02-openr                 
+               oad-irdropreport/net-VSS.csv                                     
+               [INFO PSM-0040] All shapes on net VSS are                        
+               connected.                                                       
+               ########## IR report #################                           
+               Net              : VSS                                           
+               Corner           : nom_tt_025C_5v00                              
+               Total power      : 8.62e-03 W                                    
+               Supply voltage   : 0.00e+00 V                                    
+               Worstcase voltage: 1.24e-04 V                                    
+               Average voltage  : 1.79e-05 V                                    
+               Average IR drop  : 1.79e-05 V                                    
+               Worstcase IR drop: 1.24e-04 V                                    
+               Percentage drop  : 0.00 %                                        
+               ######################################                           
+                                                                                
+[14:46:09] [V] Running 'Magic.StreamOut' at                         step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/03-magic-str             
+               eamout'…                                                         
+[14:46:09] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/03-magic-str             
+               eamout/magic-streamout.log'…                                     
+[14:46:19] [V] Running 'KLayout.StreamOut' at                       step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/04-klayout-s             
+               treamout'…                                                       
+[14:46:19] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/04-klayout-s             
+               treamout/klayout-streamout.log'…                                 
+[14:46:24] [V] Running 'KLayout.Render' at                          step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/05-klayout-r             
+               ender'…                                                          
+[14:46:24] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/05-klayout-r             
+               ender/klayout-render.log'…                                       
+[14:46:27] [V] Running 'Magic.WriteLEF' at                          step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/06-magic-wri             
+               telef'…                                                          
+[14:46:27] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/06-magic-wri             
+               telef/magic-writelef.log'…                                       
+[14:46:33] [V] Running 'Odb.CheckDesignAntennaProperties' at        step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/07-odb-check             
+               designantennaproperties'…                                        
+[14:46:33] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/07-odb-check             
+               designantennaproperties/odb-checkdesignantennaproper             
+               ties.log'…                                                       
+[14:46:35] [V] Running 'KLayout.XOR' at                             step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/08-klayout-x             
+               or'…                                                             
+[14:46:35] [I] Running XOR with 14 threads…                       klayout.py:401
+[14:46:35] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/08-klayout-x             
+               or/klayout-xor.log'…                                             
+[14:46:44] [V] Running 'Checker.XOR' at                             step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/09-checker-x             
+               or'…                                                             
+[14:46:44] [I] Check for XOR differences clear.                   checker.py:131
+[14:46:44] [V] Running 'Magic.DRC' at                               step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/10-magic-drc             
+               '…                                                               
+[14:46:44] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/10-magic-drc             
+               /magic-drc.log'…                                                 
+[14:47:35] [V] Running 'KLayout.DRC' at                             step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/11-klayout-d             
+               rc'…                                                             
+[14:47:35] [W] KLAYOUT_DRC_RUNSET is unset. KLayout.DRC may not   klayout.py:634
+               be supported for the gf180mcuD PDK. This step will               
+               be skipped.                                                      
+[14:47:35] [V] Running 'Checker.MagicDRC' at                        step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/12-checker-m             
+               agicdrc'…                                                        
+[14:47:35] [I] Check for Magic DRC errors clear.                  checker.py:131
+[14:47:35] [V] Running 'Checker.KLayoutDRC' at                      step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/13-checker-k             
+               layoutdrc'…                                                      
+[14:47:35] [W] The KLayout DRC errors metric was not found. Are   checker.py:133
+               you sure the relevant step was run?                              
+[14:47:35] [V] Running 'Magic.SpiceExtraction' at                   step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/14-magic-spi             
+               ceextraction'…                                                   
+[14:47:35] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/14-magic-spi             
+               ceextraction/magic-spiceextraction.log'…                         
+[14:47:53] [V] Running 'Checker.IllegalOverlap' at                  step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/15-checker-i             
+               llegaloverlap'…                                                  
+[14:47:53] [I] Check for Magic Illegal Overlap errors clear.      checker.py:131
+[14:47:53] [V] Running 'Netgen.LVS' at                              step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/16-netgen-lv             
+               s'…                                                              
+[14:47:53] [I] Logging subprocess to                                step.py:1336
+               'asic/configs/runs/A_p100_u30_v2_resume/16-netgen-lv             
+               s/netgen-lvs.log'…                                               
+[14:47:56] [V] Running 'Checker.LVS' at                             step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/17-checker-l             
+               vs'…                                                             
+[14:47:56] [I] Check for LVS errors clear.                        checker.py:131
+[14:47:56] [I] Gating variable for step 'Yosys.EQY' set to     sequential.py:362
+               'False'- the step will be skipped.                               
+[14:47:56] [I] Skipping step 'Equivalence Check'…              sequential.py:370
+[14:47:56] [V] Running 'Checker.SetupViolations' at                 step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/18-checker-s             
+               etupviolations'…                                                 
+[14:47:56] [V] No setup violations found                          checker.py:628
+[14:47:56] [V] Running 'Checker.HoldViolations' at                  step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/19-checker-h             
+               oldviolations'…                                                  
+[14:47:56] [V] No hold violations found                           checker.py:628
+[14:47:56] [V] Running 'Checker.MaxSlewViolations' at               step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/20-checker-m             
+               axslewviolations'…                                               
+[14:47:56] [W] Max Slew violations found in the following         checker.py:626
+               corners:                                                         
+               * max_ss_125C_4v50                                               
+               * max_tt_025C_5v00                                               
+               * min_ss_125C_4v50                                               
+               * nom_ss_125C_4v50                                               
+               * nom_tt_025C_5v00                                               
+[14:47:56] [V] No max slew violations found                       checker.py:628
+[14:47:56] [V] Running 'Checker.MaxCapViolations' at                step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/21-checker-m             
+               axcapviolations'…                                                
+[14:47:56] [W] Max Cap violations found in the following corners: checker.py:626
+               * max_ff_n40C_5v50                                               
+               * max_ss_125C_4v50                                               
+               * max_tt_025C_5v00                                               
+               * min_ff_n40C_5v50                                               
+               * min_ss_125C_4v50                                               
+               * min_tt_025C_5v00                                               
+               * nom_ff_n40C_5v50                                               
+               * nom_ss_125C_4v50                                               
+               * nom_tt_025C_5v00                                               
+[14:47:56] [V] No max cap violations found                        checker.py:628
+[14:47:56] [V] Running 'Misc.ReportManufacturability' at            step.py:1138
+               'asic/configs/runs/A_p100_u30_v2_resume/22-misc-repo             
+               rtmanufacturability'…                                            
+[14:47:56] [W] klayout__drc_error__count not reported. KLayout.DRC   misc.py:102
+               may have been skipped.                                           
+[14:47:56] [I] Saving views to                                      state.py:209
+               '/mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/file             
+               s-pasted-by-the-user-misi/outputs/Proyecto3AC/asic/c             
+               onfigs/runs/A_p100_u30_v2_resume/final'…                         
+[14:48:01] [I] Flow complete.                                  sequential.py:413
+
+
+[14:48:01] [W] The following warnings were generated by the flow:    flow.py:699
+[14:48:01] [W] [OpenROAD.IRDropReport] 'VSRC_LOC_FILES' was not      flow.py:701
+               given a value, which may make the results of IR drop             
+               analysis inaccurate. If you are not integrating a                
+               top-level chip for manufacture, you may ignore this              
+               warning, otherwise, see the documentation for                    
+               'VSRC_LOC_FILES'.                                                
+[14:48:01] [W] [KLayout.DRC] KLAYOUT_DRC_RUNSET is unset.            flow.py:701
+               KLayout.DRC may not be supported for the gf180mcuD               
+               PDK. This step will be skipped.                                  
+[14:48:01] [W] [Checker.KLayoutDRC] The KLayout DRC errors metric    flow.py:701
+               was not found. Are you sure the relevant step was                
+               run?                                                             
+[14:48:01] [W] [Checker.MaxSlewViolations] Max Slew violations found flow.py:701
+               in the following corners:                                        
+               * max_ss_125C_4v50                                               
+               * max_tt_025C_5v00                                               
+               * min_ss_125C_4v50                                               
+               * nom_ss_125C_4v50                                               
+               * nom_tt_025C_5v00                                               
+[14:48:01] [W] [Checker.MaxCapViolations] Max Cap violations found   flow.py:701
+               in the following corners:                                        
+               * max_ff_n40C_5v50                                               
+               * max_ss_125C_4v50                                               
+               * max_tt_025C_5v00                                               
+               * min_ff_n40C_5v50                                               
+               * min_ss_125C_4v50                                               
+               * min_tt_025C_5v00                                               
+               * nom_ff_n40C_5v50                                               
+               * nom_ss_125C_4v50                                               
+               * nom_tt_025C_5v00                                               
+[14:48:01] [W] [Misc.ReportManufacturability]                        flow.py:701
+               klayout__drc_error__count not reported. KLayout.DRC              
+               may have been skipped.                                           

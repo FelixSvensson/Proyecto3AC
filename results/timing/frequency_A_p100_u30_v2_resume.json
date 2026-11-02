@@ -1,0 +1,19 @@
+{
+  "source_run": "A_p100_u30_v2_resume",
+  "method": "fixed routed layout; absolute IO delays unchanged; measured integer-ns bisection",
+  "resolution_ns": 1,
+  "status": "measured",
+  "minimum_passing_period_ns": 57,
+  "adjacent_failing_period_ns": 56,
+  "frequency_mhz": 17.54385964912281,
+  "sampled_periods_ns": [
+    29,
+    44,
+    51,
+    55,
+    56,
+    57,
+    59,
+    100
+  ]
+}

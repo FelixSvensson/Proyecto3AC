@@ -1,0 +1,56 @@
+[
+  {
+    "run": "A_v2_p100_u40",
+    "corner": "max_ss_125C_4v50",
+    "startpoint": "u_pochoco.u_ram._604_/Q",
+    "endpoint": "u_pochoco.u_ram._660_/D",
+    "launch_output_time_ns": 5.41715,
+    "data_arrival_time_ns": 60.411949,
+    "combinational_q_to_d_ns": 54.994799,
+    "required_time_ns": 101.543861,
+    "slack_ns": 41.131912,
+    "start_signal": [
+      "u_pochoco.instr_rdata[4]"
+    ],
+    "end_state_signal": [
+      "u_pochoco.ram_b_rdata[28]"
+    ],
+    "source": "asic/configs/runs/A_v2_p100_u40/55-openroad-stapostpnr/max_ss_125C_4v50/max.rpt"
+  },
+  {
+    "run": "A_opt_v2_p100_u40",
+    "corner": "max_ss_125C_4v50",
+    "startpoint": "u_pochoco.u_ram._572_/Q",
+    "endpoint": "u_pochoco.u_periph._494_/D",
+    "launch_output_time_ns": 4.744111,
+    "data_arrival_time_ns": 60.505962,
+    "combinational_q_to_d_ns": 55.76185099999999,
+    "required_time_ns": 101.751808,
+    "slack_ns": 41.24585,
+    "start_signal": [
+      "u_pochoco.instr_rdata[0]"
+    ],
+    "end_state_signal": [
+      "u_pochoco.u_periph.led_cycle_q[20]"
+    ],
+    "source": "asic/configs/runs/A_opt_v2_p100_u40/55-openroad-stapostpnr/max_ss_125C_4v50/max.rpt"
+  },
+  {
+    "run": "final_A_v2_p100_u40",
+    "corner": "max_ss_125C_4v50",
+    "startpoint": "u_pochoco.u_ram._604_/Q",
+    "endpoint": "u_pochoco.u_ram._648_/D",
+    "launch_output_time_ns": 5.466147,
+    "data_arrival_time_ns": 60.116585,
+    "combinational_q_to_d_ns": 54.650438,
+    "required_time_ns": 101.576202,
+    "slack_ns": 41.459614,
+    "start_signal": [
+      "u_pochoco.instr_rdata[4]"
+    ],
+    "end_state_signal": [
+      "u_pochoco.ram_b_rdata[16]"
+    ],
+    "source": "asic/configs/runs/final_A_v2_p100_u40/55-openroad-stapostpnr/max_ss_125C_4v50/max.rpt"
+  }
+]

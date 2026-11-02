@@ -1,0 +1,8 @@
+test_all_generated_words_and_determinism (__main__.RomTests.test_all_generated_words_and_determinism) ... ok
+test_constants (__main__.RomTests.test_constants) ... ok
+test_limits (__main__.RomTests.test_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.025s
+
+OK

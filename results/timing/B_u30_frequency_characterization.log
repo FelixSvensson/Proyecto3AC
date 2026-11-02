@@ -1,0 +1,27 @@
+STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p100_20261102T171428805999Z True 9.666202334377202
+STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p93_20261102T171534552034Z True 2.6662051099348423
+STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p46_20261102T171643438064Z False -44.33380010811352
+STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p69_20261102T171750966598Z False -21.333797554600494
+STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p81_20261102T171858418065Z False -9.333796222332825
+STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p87_20261102T172005593847Z False -3.3337955561989916
+STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p90_20261102T172111683421Z False -0.3337916704182954
+STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p91_20261102T172221975812Z True 0.6662048878902309
+{
+  "source_run": "B_p100_u30_v2_resume_20261102T153658Z",
+  "method": "fixed routed layout; absolute IO delays unchanged; measured integer-ns bisection",
+  "resolution_ns": 1,
+  "status": "measured",
+  "minimum_passing_period_ns": 91,
+  "adjacent_failing_period_ns": 90,
+  "frequency_mhz": 10.989010989010989,
+  "sampled_periods_ns": [
+    46,
+    69,
+    81,
+    87,
+    90,
+    91,
+    93,
+    100
+  ]
+}

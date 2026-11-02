@@ -1,0 +1,20 @@
+{
+  "hardware_hashes_match_pre_run_snapshot": true,
+  "nonhardware_differences": [],
+  "publication_file_count": 5762,
+  "publication_bytes": 311969273,
+  "files_over_10MB": [
+    {
+      "file": "results\\checkpoints\\B_p100_u30_v2_resume_20261102T153658Z.zip",
+      "bytes": 16740963
+    },
+    {
+      "file": "results\\runs\\B_p100_u30_v2_resume_20261102T153658Z\\views\\def\\asic_top.def",
+      "bytes": 42053172
+    },
+    {
+      "file": "results\\runs\\B_p100_u30_v2_resume_20261102T153658Z\\views\\gds\\asic_top.gds",
+      "bytes": 47133284
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Transcripción de la salida observada de Icarus durante el desarrollo (antes
+de corregir la inicialización del estímulo del modelo de referencia):
+
+FATAL: sim/asic_memory_tb.v:18: Program reset word 0 actual=800000b7 expected=xxxxxxxx
+       Time: 20000  Scope: asic_memory_tb
+
+El dato DUT era correcto; el modelo de referencia no había visto una transición
+de dirección en tiempo cero. Se cambió la dirección inicial a ffffffff y se
+añadieron comprobaciones de X en DUT y referencia. Los logs funcionales vigentes
+contienen las ejecuciones posteriores aprobadas. Este archivo es una transcripción
+archivada de la salida observada, no se presenta como el log original inalterado.

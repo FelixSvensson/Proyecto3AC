@@ -1,0 +1,8 @@
+{
+  "snapshot": "asic/configs/runs/B_v2_p100_u40_recovery/01-openroad-detailedrouting/drt_iter2.odb",
+  "sha256": "aff6587bc5abf3414fb0e767433c198e19d98c000ed99a0a29d08a61093fcdee",
+  "input_state": "results/environment/B_snapshot_resume_state.json",
+  "method": "Reload routed wires; reinitialize router optimization state",
+  "openroad_commit": "dcf36133a369abc8f3c5e5738cd4d82e4903c0e0",
+  "source": "https://github.com/The-OpenROAD-Project/OpenROAD/blob/dcf36133a369abc8f3c5e5738cd4d82e4903c0e0/src/drt/src/io/io.cpp"
+}

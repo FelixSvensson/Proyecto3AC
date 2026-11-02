@@ -1,0 +1,81 @@
+{
+  "source_run": "A_p100_u30_v2_resume",
+  "sta_run": "STA_fixed_A_p100_u30_v2_resume_p100_20261102T035345660749Z",
+  "period_ns": 100.0,
+  "mode": "fixed routed layout; absolute IO constraints unchanged",
+  "pass_timing": true,
+  "corners": {
+    "max_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 72.33980375031128,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.13366708118694834
+    },
+    "max_ss_125C_4v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 43.31543601956613,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.9308392098364875
+    },
+    "max_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 68.0335380621656,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.37265025453528894
+    },
+    "min_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 72.78449693406353,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.1292208598921818
+    },
+    "min_ss_125C_4v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 46.6948235516946,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.9209862022588821
+    },
+    "min_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 68.69742658067175,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.36663273454933104
+    },
+    "nom_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 72.58246120686353,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.13131063275053653
+    },
+    "nom_ss_125C_4v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 45.141527349401294,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.9256233819192848
+    },
+    "nom_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 68.39613513590629,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.36946335925297086
+    }
+  }
+}

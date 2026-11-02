@@ -1,0 +1,14 @@
+{
+  "source_snapshot": "asic/configs/runs/B_v2_p100_u40_snapshot_resume/01-openroad-detailedrouting/drt_iter37.odb",
+  "sha256": "a97c364b735c2b9f4fbd7ffbdecc4142c352fe8b37ec05aa124acb581a68fe46",
+  "source_report": "asic/configs/runs/B_v2_p100_u40_snapshot_resume/01-openroad-detailedrouting/drt-run-1/asic_top.drc-37.rpt",
+  "restart": "Fresh process after post-route antenna insertion; ROUTED wires retained; optimization state reset",
+  "threads": 4,
+  "unchanged": [
+    "RTL",
+    "program",
+    "PDK",
+    "clock period 100 ns",
+    "core utilization 40 percent"
+  ]
+}

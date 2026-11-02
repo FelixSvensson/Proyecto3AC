@@ -1,469 +1,190 @@
-# Proyecto 2 — Juego de Reflejos sobre Pochoco SoC
+# Proyecto 3: Pochoco SoC de FPGA a ASIC
 
-**Arquitectura de Computadores — 2026-2**  
-**Universidad de los Andes**
+Universidad de los Andes, Arquitectura de Computadores, 2026-2. Grupo 15:
+Martin Heiremans, Felix Svensson y Juan Pablo Saavedra. Profesor: Jorge Gómez Mir.
+Los nombres proceden del informe real del Proyecto 2.
 
-Este repositorio implementa un juego de reflejos sobre **Pochoco SoC** y **Espino Core** para la FPGA **Lattice iCE40 HX1K / Nandland Go Board**.
+**Estado:** implementación real en desarrollo; consultar
+[checklist](docs/CHECKLIST_ENTREGA.md). Las métricas canónicas de las corridas
+terminadas están en `results/summary.csv` y `results/runs/*/corners.csv`.
 
-El juego se ejecuta completamente en Assembly sobre Espino Core. El programa se ensambla con un **assembler propio desarrollado en Python**, se convierte a `sw/game.hex`, se carga en la memoria del SoC y finalmente se sintetiza como `game_top.bin`.
+## Procedencia
 
-Base del proyecto: `nic0villegasc/pochoco_soc`
+Clon independiente de [Proyecto2AC](https://github.com/FelixSvensson/Proyecto2AC),
+main, revisión `67d0c48bcc115614a4029ff024277cb53bc30a05`, con historial completo.
+Se inspeccionó dev-game y se priorizó main por ser posterior y contener el
+informe entregado. **Proyecto 2 permanece intacto. No se ejecutó commit ni push.**
+El remoto proyecto2 conserva lectura pero tiene push localmente deshabilitado.
+origin apunta a Proyecto3AC; añadir esa URL no crea el repositorio remoto.
 
-![Pochoco SoC Architecture](pochoco_soc.svg)
+## Arquitectura y carpetas
 
----
+Espino utiliza datos de 32 bits, 16 registros RV32E y x0 constante. Conserva el
+subconjunto del Proyecto 2, sin desplazamientos ni extensión M. `asic_top`
+expone clock, reset explícito activo bajo, cuatro botones, cuatro LED, dos
+displays y SPI. Son terminales lógicos de un macro, sin pads ni encapsulado.
 
-## 1. Funcionamiento del juego
+El banco iCE40 se reemplaza por FF con dos lecturas síncronas y lectura anterior
+a escritura. Se conserva el protocolo del controlador. El contador se separa
+para medir área y trazar instancias. Mantener reset activo varios flancos y
+desactivarlo cumpliendo timing; el integrador debe respetar las restricciones
+de los puertos. El macro no incorpora pads ni debounce.
 
-Cada ronda funciona de la siguiente forma:
+- `rtl/`: fuentes FPGA conservadas; `asic/rtl/`: reemplazos ASIC.
+- `asic/variants/`: optimización de memoria; `asic/configs/`: experimentos.
+- `asic/constraints/`: orden funcional de terminales.
+- `sw/game.s`: producción a 10 MHz; `sw/game_fpga_original.s`: fuente entregado.
+- `asic/generated/`: ROM/programa de producción; `sim/generated/`: abreviado.
+- `scripts/`, `results/`, `docs/`: automatización, evidencia y documentos.
+- El Makefile original se conserva; los comandos ASIC usan `Makefile.asic`.
 
-1. Se encienden los cuatro LEDs durante al menos **3 segundos**.
-2. Se espera a que no haya ningún botón presionado.
-3. Se selecciona pseudoaleatoriamente uno de los cuatro LEDs.
-4. Se enciende solamente el LED objetivo.
-5. En el mismo evento de escritura del LED, el hardware guarda el ciclo exacto de inicio de la medición.
-6. El jugador debe presionar el botón correspondiente.
-7. Si la respuesta es correcta, se calcula el tiempo de reacción, se muestra en los displays en **décimas de segundo** y se incrementa el número de rondas correctas.
-8. Si el botón es incorrecto, se muestra `EE`, la ronda actual se reinicia y las rondas correctas anteriores se conservan.
-9. Al completar **10 rondas correctas**, se calcula y muestra el tiempo de reacción promedio.
-10. Una vez mostrado el promedio, el juego espera que se presione y suelte el **botón 4** para comenzar una nueva partida desde cero.
+## Instalación ejecutada y versiones
 
----
+Windows build 26200; WSL 2.7.14.0; Ubuntu 24.04.5 LTS. En Windows:
 
-## 2. Flujo completo
-
-```text
-sw/game.s
-    |
-    v
-assembler/assembler.py
-    |
-    v
-sw/game.hex
-    |
-    v
-rtl/game_top.v
-    |
-    v
-Pochoco SoC
-    |
-    v
-Espino Core
-    |
-    v
-Yosys -> nextpnr-ice40 -> icepack
-    |
-    v
-game_top.bin
-    |
-    v
-Nandland Go Board
+```powershell
+wsl --install -d Ubuntu-24.04
+wsl --list --verbose
 ```
 
-No se utiliza un assembler RISC-V externo para generar `game.hex`.
-
----
-
-## 3. Archivos principales
-
-```text
-Proyecto2AC/
-├── assembler/
-│   ├── assembler.py
-│   └── test_assembler.py
-├── rtl/
-│   ├── game_top.v
-│   ├── pochoco_soc.v
-│   ├── pochoco_periph.v
-│   ├── pochoco_ram.v
-│   ├── pochoco_spi_slave.v
-│   └── espino_core/
-├── sim/
-│   └── pochoco_periph_tb.v
-├── sw/
-│   ├── game.s
-│   └── game.hex
-├── goboard.pcf
-├── Makefile
-└── README.md
-```
-
-- `sw/game.s`: lógica completa del juego.
-- `sw/game.hex`: código máquina generado por el assembler.
-- `assembler/assembler.py`: assembler propio.
-- `assembler/test_assembler.py`: pruebas automáticas del assembler.
-- `rtl/game_top.v`: top-level del proyecto.
-- `rtl/pochoco_periph.v`: periféricos y extensiones de temporización.
-- `sim/pochoco_periph_tb.v`: testbench del periférico.
-- `Makefile`: automatiza generación, pruebas, síntesis y programación.
-
----
-
-## 4. Top-level
-
-El módulo superior es `game_top`.
-
-Instancia Pochoco SoC de la siguiente forma:
-
-```verilog
-pochoco_soc #(
-    .MemFile("sw/game.hex")
-)
-```
-
-Así, Espino Core ejecuta directamente el programa generado desde `sw/game.s`.
-
----
-
-## 5. Mapa de memoria
-
-| Dirección | Acceso | Función |
-|---|---|---|
-| `0x0000_0000...` | R/W | RAM unificada |
-| `0x8000_0000` | W | Displays de 7 segmentos |
-| `0x8000_0004` | W | LEDs |
-| `0x8000_0008` | R | Botones |
-| `0x8000_000C` | R | Contador libre de ciclos |
-| `0x8000_0010` | R | Ciclo de la última escritura a LEDs |
-| `0x8001_0000...` | R/W | Periférico SPI original |
-
-En `pochoco_periph.v` se agregaron:
-
-- `cycle_q`: contador de 32 bits que aumenta en cada ciclo de reloj.
-- `led_cycle_q`: guarda el ciclo correspondiente a la última escritura al registro de LEDs.
-
-Cuando el software escribe en `0x8000_0004`, el hardware actualiza en el mismo evento:
-
-```text
-led_q       <- nuevo valor de LEDs
-led_cycle_q <- cycle_q
-```
-
-Esto permite que el inicio de la medición coincida con el instante lógico en que aparece el LED objetivo.
-
----
-
-## 6. Temporización
-
-El reloj utilizado es de **25 MHz**.
-
-```text
-25 000 000 ciclos = 1 segundo
-75 000 000 ciclos = 3 segundos
- 2 500 000 ciclos = 0,1 segundos
-```
-
-La espera inicial de cada ronda termina cuando:
-
-```text
-ciclo_actual - ciclo_inicial >= 75 000 000
-```
-
-El tiempo de reacción se obtiene como:
-
-```text
-tiempo_reaccion = ciclo_actual - ciclo_inicio_LED
-```
-
-Para convertir el resultado a décimas de segundo se utilizan restas sucesivas de `2 500 000`, evitando depender de una instrucción de división.
-
----
-
-## 7. Promedio de 10 rondas
-
-Los tiempos correctos se acumulan en ciclos.
-
-Después de 10 rondas:
-
-```text
-promedio en décimas
-= total_ciclos / (10 * 2 500 000)
-= total_ciclos / 25 000 000
-```
-
-El programa realiza esta conversión mediante restas sucesivas de `25 000 000`.
-
-El valor mostrado se limita a dos dígitos (`00` a `99` décimas).
-
----
-
-## 8. Selección pseudoaleatoria
-
-La selección del objetivo usa información dinámica:
-
-```text
-valor = ciclo_actual XOR tiempo_acumulado
-valor = valor + rondas_correctas
-objetivo = valor AND 3
-```
-
-El resultado `0..3` se convierte en una máscara one-hot:
-
-| Objetivo | LED |
-|---:|---:|
-| 0 | `0001` |
-| 1 | `0010` |
-| 2 | `0100` |
-| 3 | `1000` |
-
-El contador de ciclos y el tiempo de respuesta del jugador introducen variación entre rondas.
-
----
-
-## 9. Assembler propio
-
-El assembler se encuentra en:
-
-```text
-assembler/assembler.py
-```
-
-Uso directo:
+Reiniciar si Windows lo pide. En Ubuntu, instalar curl, uidmap, locales,
+libfuse2t64, iverilog, python3-venv, make, git, fonts-liberation2 y poppler-utils mediante apt.
+Generar la locale en_US.UTF-8. LibreLane se instaló mediante la AppImage oficial:
 
 ```bash
+sudo mkdir -p /opt/proyecto3-tools
+sudo curl -fL --retry 3 https://github.com/librelane/librelane/releases/download/3.0.17/librelane-devshell-x86_64.AppImage -o /opt/proyecto3-tools/librelane-3.0.17.AppImage
+sudo chmod +x /opt/proyecto3-tools/librelane-3.0.17.AppImage
+sha256sum /opt/proyecto3-tools/librelane-3.0.17.AppImage
+```
+
+SHA256 real: `c8ef5ae26b1fc53dd1dd30fe2f1a1da6ab0fdf471dd5a94c2b85d2b3db36833c`.
+La instalación de WSL se ejecutó como root; no se inventó contraseña ni identidad
+Git. Para otro usuario, el directorio de PDK debe permitir escritura a Ciel.
+
+Herramientas del entorno coherente: LibreLane 3.0.17, Yosys 0.62, KLayout 0.30.7,
+Magic 8.3.623, Netgen 1.5.316, OpenROAD
+`dcf36133a369abc8f3c5e5738cd4d82e4903c0e0`, OpenSTA
+`857316ff001b2a8dbbdc5996944d08a6d38c87ab`. Ver revisiones y parches en
+`results/environment/librelane_tool_versions.txt`. La síntesis mapeada utiliza
+siempre el Yosys de la AppImage, no el paquete opcional de Ubuntu.
+
+### GF180MCU
+
+Ciel instala la revisión compatible de Open PDKs
+`54435919abffb937387ec956209f9cf5fd2dfbee`, variante **gf180mcuD**, biblioteca
+**gf180mcu_fd_sc_mcu7t5v0**, fuera del repositorio en
+`/opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/<revision>/gf180mcuD`.
+
+```bash
+/opt/proyecto3-tools/librelane-3.0.17.AppImage librelane --pdk gf180mcuD --pdk-root /opt/proyecto3-tools/pdks --smoke-test
+```
+
+La prueba pasó; log en results/environment/librelane-smoke.log. Pasar --pdk
+explícitamente. Documentación: [LibreLane](https://librelane.readthedocs.io/en/stable/),
+[GF180MCU](https://gf180mcu-pdk.readthedocs.io/en/latest/),
+[OpenROAD](https://openroad.readthedocs.io/en/latest/).
+
+## Programa, assembler y memorias
+
+```bash
+make -f Makefile.asic generate
 python3 assembler/assembler.py sw/game.s sw/game.hex
+python3 assembler/assembler.py sw/game.s sw/game.hex --rom-dir asic/generated
+make -f Makefile.asic verify
 ```
 
-Genera **una palabra hexadecimal de 32 bits por línea**.
+Hay 107 instrucciones (428 bytes). El juego usa cero palabras de RAM: todos
+los accesos son MMIO y el estado vive en registros. Se reserva una palabra en
+0x1AC para datos y pruebas. A (`MemoryStrategy=0`) usa ROM combinacional y RAM
+mínima; B (`MemoryStrategy=1`) contiene 108 palabras FF, incluidas instrucciones
+reescribibles, restauradas mediante hardware de reset. No hay bootloader SPI.
 
-Ejemplo:
+Constantes finales: 30.000.000, 1.000.000 y 10.000.000 ciclos a 10 MHz.
+`generate_game.py --sim` produce 300/100/1000 para simulación, nunca para el GDS.
+La fuente original contenía una espera real de 250.000.000 ciclos; se preservó
+y se documentó la discrepancia. El Makefile FPGA original sigue disponible,
+pero el game.s actual tiene constantes de 10 MHz y no de 25 MHz.
 
-```asm
-addi x1, x0, 5
-```
-
-produce:
-
-```text
-00500093
-```
-
-### Registros
-
-El diseño utiliza RV32E, por lo que se aceptan los registros:
-
-```text
-x0 ... x15
-```
-
-### Instrucciones soportadas
-
-- U-type: `lui`, `auipc`
-- Inmediatas: `addi`, `slti`, `sltiu`, `xori`, `ori`, `andi`
-- Registro-registro: `add`, `sub`, `slt`, `sltu`, `xor`, `or`, `and`
-- Loads: `lb`, `lh`, `lw`, `lbu`, `lhu`
-- Stores: `sb`, `sh`, `sw`
-- Branches: `beq`, `bne`, `blt`, `bge`, `bltu`, `bgeu`
-- Saltos: `jal`, `jalr`
-
-Las instrucciones de shift (`sll`, `srl`, `sra`, `slli`, `srli`, `srai`) no se aceptan porque los shifts están deshabilitados en la ALU del Espino Core utilizado.
-
-El assembler resuelve labels mediante dos pasadas y valida registros, inmediatos, alineamiento, etiquetas duplicadas e instrucciones no soportadas.
-
----
-
-## 10. Pruebas automáticas
-
-Ejecutar:
+## Síntesis y comparación RTL/netlist
 
 ```bash
-make test
+bash scripts/hier_batch.sh
+/opt/proyecto3-tools/librelane-3.0.17.AppImage python3 scripts/synth_hierarchy.py 0 --sim
+/opt/proyecto3-tools/librelane-3.0.17.AppImage python3 scripts/synth_hierarchy.py 1 --sim
+python3 scripts/gate_verify.py A_sim_hier
+python3 scripts/gate_verify.py B_sim_hier
 ```
 
-Este comando corre:
+El último comando ejecuta realmente celdas GF180 sin SDF. Se retiran únicamente
+los bloques specify de una copia temporal del modelo de celdas, debido a las
+rutas ifnone no admitidas por Icarus. La simulación compara estímulos por ciclo
+y trazas de respuestas; el timing se verifica aparte con STA/SPEF. Las ondas
+seleccionadas se conservan comprimidas en results/functional/waves/.
 
-### Tests del assembler
-
-`assembler/test_assembler.py`
-
-Comprueban:
-
-- programa válido;
-- registro inválido;
-- inmediato fuera de rango;
-- instrucción no soportada;
-- label duplicado;
-- shift deshabilitado.
-
-### Testbench del periférico
-
-`sim/pochoco_periph_tb.v`
-
-Comprueba:
-
-- incremento del contador;
-- escritura de LEDs;
-- captura del timestamp;
-- lectura de botones;
-- actualización del timestamp;
-- displays de 7 segmentos.
-
-La simulación genera:
-
-```text
-sim/pochoco_periph_tb.vcd
-```
-
-Puede visualizarse con:
+## Flujos, barridos y corrida final
 
 ```bash
-gtkwave sim/pochoco_periph_tb.vcd
+bash scripts/run_flow.sh asic/configs/A_p100_u30.json A_$(date -u +%Y%m%dT%H%M%SZ)
+bash scripts/run_flow.sh asic/configs/B_p100_u30.json B_$(date -u +%Y%m%dT%H%M%SZ)
+bash scripts/experiment_batch.sh A_p100_u40 A_p80_u40 A_p60_u40 A_p50_u40 A_p100_u50
+bash scripts/run_flow.sh asic/configs/A_opt_p100_u40.json OPT_$(date -u +%Y%m%dT%H%M%SZ)
+make -f Makefile.asic final
+python3 scripts/collect_results.py
+python3 scripts/archive_evidence.py
 ```
 
----
+Final: **100 ns, 40 %, GF180MCU D y LibreLane**. No se desactivaron DRC, LVS,
+antena ni setup/hold. El PDK no configura KLAYOUT_DRC_RUNSET y el flujo lo
+advierte; el DRC reportado corresponde a Magic y al router. Se conservan advertencias de slew, fanout y capacitancia, detalladas en docs/RESULTADOS_MEDIDOS.md, que requieren revisión si se integra/fabrica.
 
-## 11. Requisitos
+Las corridas v1 aplanan temprano; v2 usa deferred_flatten y contador separado.
+No combinar sus cifras sin identificar la versión. Snapshots/ZIP y hashes en
+results/snapshots; configuración efectiva en results/runs/*/resolved.json.
+Los barridos se vuelven a implementar; no se extrapolan slacks de una sola
+corrida. La frecuencia se calcula con el menor período observado que cierre
+todos los corners, distinguiéndolo del óptimo continuo no demostrado.
 
-- Python 3
-- Make
-- Yosys
-- nextpnr-ice40
-- Project IceStorm
-- Icarus Verilog
-- GTKWave
+## Resultados y documentación
 
-En Ubuntu/WSL:
+RTL A/B y netlists A/B reprodujeron diez aciertos, 136 ciclos por respuesta,
+acumulado de 1.360, error preservando rondas y reset/reinicio. El final de A,
+final_A_v2_p100_u40, tiene GDS real a 100 ns/40 %, DRC Magic/LVS/antena cero
+y timing limpio en nueve corners. B_p100_u30_v2_resume_20261102T153658Z también
+cierra esos criterios a 100 ns/30 %. Se compara con A_p100_u30_v2_resume bajo
+los mismos 100 ns/30 %: los límites medidos sobre layout fijo son 57 ns para A
+(17,543860 MHz) y 91 ns para B (10,989011 MHz), con fallo a 1 ns menos en cada
+caso. [Reproducir la reanudación de B](docs/REPRODUCIR_B.md).
 
-```bash
-sudo apt update
-sudo apt install python3 make yosys nextpnr-ice40 fpga-icestorm iverilog gtkwave
-```
+Los intentos B al 40 %, incluido el desvío físico local, permanecen como pruebas
+incompletas y no se presentan como signoff aprobado. La comparación seleccionada
+usa 30 % en ambas arquitecturas; el final obligatorio de A conserva el 40 %.
+La síntesis jerárquica comparable midió A 147.741,3504 µm² y
+B 613.575,9616 µm²; no confundir con áreas LibreLane o posteriores a filler.
+Resultados posteriores y estado final: results/summary.csv y el checklist.
 
----
+[Informe](docs/Informe_Proyecto3.pdf), [defensa](docs/Guia_Defensa_Proyecto3.pdf),
+[migración](docs/MIGRACION_ASIC.md), [protección de Proyecto 2](docs/PROTECCION_PROYECTO2.md).
 
-## 12. Generar `game.hex`
+Para regenerar PDF instalar reportlab==4.4.9, matplotlib==3.11.2 y Pillow en un
+entorno Python de documentación; ejecutar scripts/build_documents.py y revisar
+las páginas renderizadas con Poppler. Linux utiliza Liberation Sans.
+`make -f Makefile.asic report` utiliza los datos curados incluidos en Git y no
+requiere carpetas temporales de las corridas. Ejecutar `make -f Makefile.asic collect`
+solo cuando se quiera actualizar las tablas desde corridas locales terminadas.
+El [índice de evidencias](docs/EVIDENCIAS.md) relaciona cada resultado con sus archivos.
+`.gitattributes` fija los finales de línea de las fuentes medidas y las
+evidencias para conservar sus hashes al publicar y clonar desde Windows/Linux.
 
-```bash
-make game
-```
+## Publicación manual
 
-También puede ejecutarse:
+Seguir docs/PUBLICAR_MANUALMENTE.md al terminar la revisión. El alumno debe
+verificar su identidad y ejecutar personalmente commit y push. Puede necesitar
+crear primero el remoto Proyecto3AC vacío en GitHub. No publicar PDK, AppImage,
+caches, ondas sin comprimir ni carpetas asic/configs/runs. Los reportes curados
+en results/runs sí forman parte de la entrega. Se incluye únicamente un ZIP de
+checkpoint seleccionado, con diez vistas y hashes verificados, para reproducir
+la entrada de B; los demás ODB intermedios siguen excluidos. El estado contra cada criterio de
+la rúbrica se mantiene en docs/CHECKLIST_ENTREGA.md.
 
-```bash
-python3 assembler/assembler.py sw/game.s sw/game.hex
-```
-
-El `Makefile` regenera `game.hex` automáticamente si cambia `game.s` o `assembler.py`.
-
----
-
-## 13. Sintetizar
-
-```bash
-make
-```
-
-o:
-
-```bash
-make all
-```
-
-El flujo es:
-
-```text
-Yosys -> nextpnr-ice40 -> icepack -> game_top.bin
-```
-
-Dispositivo objetivo:
-
-```text
-Lattice iCE40 HX1K
-package VQ100
-```
-
-Para limpiar archivos de síntesis:
-
-```bash
-make clean
-```
-
----
-
-## 14. Programar la FPGA
-
-Con la Go Board conectada:
-
-```bash
-make prog
-```
-
-Esto genera el bitstream si es necesario y ejecuta:
-
-```text
-iceprog -s -k game_top.bin
-```
-
-Si se trabaja desde WSL, el dispositivo USB debe estar disponible dentro de Linux antes de utilizar `iceprog`.
-
----
-
-## 15. Modificación rápida durante la evaluación
-
-Si se modifica `sw/game.s`:
-
-```bash
-nano sw/game.s
-make game
-make test
-make
-make prog
-```
-
-Esto demuestra el flujo completo:
-
-```text
-Assembly modificado
-    -> assembler propio
-    -> game.hex
-    -> síntesis
-    -> programación FPGA
-```
-
----
-
-## 16. Modificaciones respecto al Pochoco SoC base
-
-1. `rtl/game_top.v`
-   - top-level propio;
-   - carga `sw/game.hex`.
-
-2. `rtl/pochoco_periph.v`
-   - contador libre de 32 bits;
-   - timestamp de última escritura a LEDs;
-   - nuevas direcciones `0x8000_000C` y `0x8000_0010`.
-
-3. `sw/game.s`
-   - juego completo;
-   - temporización;
-   - selección pseudoaleatoria;
-   - comprobación de botones;
-   - conversión a décimas;
-   - promedio de 10 rondas.
-
-4. `assembler/assembler.py`
-   - assembler propio compatible con el subconjunto utilizado por Espino Core.
-
-5. `assembler/test_assembler.py`
-   - pruebas automáticas del assembler.
-
-6. `sim/pochoco_periph_tb.v`
-   - verificación de periféricos y temporización.
-
-7. `Makefile`
-   - generación automática de `game.hex`;
-   - pruebas automáticas;
-   - síntesis;
-   - programación.
-
----
-
-## 17. Comandos principales
-
-```bash
-make game      # genera sw/game.hex
-make test      # ejecuta todas las pruebas
-make           # sintetiza y genera game_top.bin
-make prog      # programa la FPGA
-make clean     # limpia archivos generados
-```
+Resultados actualizados: [tablas medidas](docs/RESULTADOS_MEDIDOS.md). El layout final fijo pasa 59 ns y falla 58 ns: 16,949153 MHz observados; la entrega utiliza 100 ns. El game.hex original sí contenía 75.000.000 ciclos, a diferencia del game.s posterior de main; ver results/environment/original_program_consistency.json.

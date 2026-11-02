@@ -1,0 +1,33 @@
+{
+  "DESIGN_NAME": "asic_top",
+  "PDK": "gf180mcuD",
+  "VERILOG_FILES": [
+    "dir::../../rtl/espino_core/espino_alu.v",
+    "dir::../../rtl/espino_core/espino_controller.v",
+    "dir::../../rtl/espino_core/espino_core.v",
+    "dir::../../rtl/espino_core/espino_decoder.v",
+    "dir::../../rtl/espino_core/espino_id_stage.v",
+    "dir::../../rtl/espino_core/espino_if_stage.v",
+    "dir::../../rtl/espino_core/espino_load_store_unit.v",
+    "dir::../../rtl/pochoco_spi_slave.v",
+    "dir::../../asic/rtl/asic_memory.v",
+    "dir::../../asic/rtl/asic_top.v",
+    "dir::../../asic/rtl/cycle_counter.v",
+    "dir::../../asic/rtl/espino_register_file.v",
+    "dir::../../asic/rtl/pochoco_periph.v",
+    "dir::../../asic/rtl/pochoco_soc_asic.v",
+    "dir::../../asic/generated/program_rom.v"
+  ],
+  "VERILOG_INCLUDE_DIRS": [
+    "dir::../../asic/generated"
+  ],
+  "CLOCK_PORT": "i_Clk",
+  "CLOCK_PERIOD": 60,
+  "FP_CORE_UTIL": 40,
+  "SYNTH_PARAMETERS": [
+    "MemoryStrategy=0"
+  ],
+  "SYNTH_HIERARCHY_MODE": "deferred_flatten",
+  "DRT_THREADS": 6,
+  "ERROR_ON_LINTER_WARNINGS": false
+}

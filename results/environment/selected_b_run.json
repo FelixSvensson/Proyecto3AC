@@ -1,0 +1,12 @@
+{
+  "run": "B_p100_u30_v2_resume_20261102T153658Z",
+  "config": "asic/configs/B_p100_u30.json",
+  "a_comparison_run": "A_p100_u30_v2_resume",
+  "comparison_util_pct": 30,
+  "reason": "Completed DRC Magic/LVS/antenna zero and nine-corner setup/hold at 100 ns; same 30 percent comparison as A, default routing, six threads. Final mandatory A remains 100 ns and 40 percent.",
+  "checkpoint_package": {
+    "file": "results/checkpoints/B_p100_u30_v2_resume_20261102T153658Z.zip",
+    "bytes": 16740963,
+    "sha256": "47ea624cdeffd18455ce0a210ee133ee227cf286b221457b538d4bca3ca9b528"
+  }
+}

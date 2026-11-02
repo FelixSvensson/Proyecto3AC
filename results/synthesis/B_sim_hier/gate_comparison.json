@@ -1,0 +1,10 @@
+{
+  "equal": true,
+  "clock_period_ns": 100,
+  "architecture": "B",
+  "accelerated": true,
+  "model": "GF180MCU mapped standard cells, no SDF",
+  "reaction_cycles": 136,
+  "correct_rounds": 10,
+  "total_cycles": 1360
+}

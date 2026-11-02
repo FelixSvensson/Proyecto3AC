@@ -1,0 +1,22 @@
+{
+  "type": "Short",
+  "sources": "net:u_pochoco.u_core.u_rf.regs\\[2\\]\\[11\\] net:net462",
+  "layer": "Metal2",
+  "bbox_um": [
+    33.74,
+    154.09,
+    34.02,
+    154.47
+  ],
+  "debug_purpose": "Transient route retained with DRT_OPT_ITERS=0; not a signoff candidate",
+  "debug_drc": 1924,
+  "final_drc": 0,
+  "correction": "Allow the complete routing optimization; final_A_v2_p100_u40 has zero router and Magic DRC",
+  "final_iterations": {
+    "route__drc_errors__iter:0": 18,
+    "route__drc_errors__iter:1": 1,
+    "route__drc_errors__iter:2": 0,
+    "route__drc_errors__iter:3": 3,
+    "route__drc_errors__iter:4": 0
+  }
+}

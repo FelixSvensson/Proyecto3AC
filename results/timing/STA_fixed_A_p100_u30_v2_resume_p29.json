@@ -1,0 +1,81 @@
+{
+  "source_run": "A_p100_u30_v2_resume",
+  "sta_run": "STA_fixed_A_p100_u30_v2_resume_p29_20261102T035434098016Z",
+  "period_ns": 29.0,
+  "mode": "fixed routed layout; absolute IO constraints unchanged",
+  "pass_timing": false,
+  "corners": {
+    "max_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 1.339806525868919,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.13366708118694834
+    },
+    "max_ss_125C_4v50": {
+      "setup_wns": -27.68457186301757,
+      "setup_tns": -16467.88087972743,
+      "setup_ws": -27.68457186301757,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.9308392098364875
+    },
+    "max_tt_025C_5v00": {
+      "setup_wns": -2.9664627149905316,
+      "setup_tns": -327.48043070881414,
+      "setup_ws": -2.9664627149905316,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.37265025453528894
+    },
+    "min_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 1.7844961569073805,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.1292208598921818
+    },
+    "min_ss_125C_4v50": {
+      "setup_wns": -24.305180778175323,
+      "setup_tns": -13599.79926101333,
+      "setup_ws": -24.305180778175323,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.9209862022588821
+    },
+    "min_tt_025C_5v00": {
+      "setup_wns": -2.3025706437706104,
+      "setup_tns": -188.81659081807786,
+      "setup_ws": -2.3025706437706104,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.36663273454933104
+    },
+    "nom_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 1.582460429707393,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.13131063275053653
+    },
+    "nom_ss_125C_4v50": {
+      "setup_wns": -25.8584805331824,
+      "setup_tns": -14900.854206063394,
+      "setup_ws": -25.8584805331824,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.9256233819192848
+    },
+    "nom_tt_025C_5v00": {
+      "setup_wns": -2.603872746677408,
+      "setup_tns": -244.92772592234277,
+      "setup_ws": -2.603872746677408,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.36946335925297086
+    }
+  }
+}

@@ -1,0 +1,3 @@
+$ vvp work/asic_memory_tb_opt.vvp
+PASS MEMORY strategy=0 words=107 data=1
+sim/asic_memory_tb.v:38: $finish called at 1200000 (1ps)

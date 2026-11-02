@@ -20,3 +20,16 @@ module_stats/
 sim/sim
 *.vcd
 *.csv
+
+# ASIC configurations, manifests and curated evidence must be versionable.
+!asic/**/*.json
+!sim/generated/*.json
+!results/**/*.json
+!results/**/*.csv
+!results/**/*.log
+/runs/
+/asic/configs/runs/
+/work/
+*.vvp
+*.odb
+*.spef

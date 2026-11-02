@@ -1,0 +1,9 @@
+{
+  "clock_hz": 10000000,
+  "accelerated": false,
+  "wait_cycles": 30000000,
+  "tenth_cycles": 1000000,
+  "average_divisor": 10000000,
+  "instruction_words": 107,
+  "hex_sha256": "7865fa1f747b19f3482354dc68ec1075c7722cc24214eed0a46b4bfd71e9aad0"
+}

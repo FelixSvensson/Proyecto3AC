@@ -1,0 +1,275 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+Startpoint: rst_ni (input port clocked by i_Clk)
+Endpoint: u_pochoco.u_core.u_rf._2990_
+          (recovery check against rising-edge clock i_Clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock i_Clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                 20.000000   20.000000 ^ input external delay
+     1    0.003823    0.071743    0.027068   20.027069 ^ rst_ni (in)
+                                                         rst_ni (net)
+                      0.071743    0.000000   20.027069 ^ input8/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     1    0.020838    0.260480    0.653802   20.680870 ^ input8/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net8 (net)
+                      0.260480    0.000847   20.681719 ^ fanout786/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     7    0.184910    1.997966    1.741384   22.423101 ^ fanout786/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net786 (net)
+                      1.998002    0.005061   22.428164 ^ fanout715/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     5    0.067943    0.755187    0.867075   23.295238 ^ fanout715/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net715 (net)
+                      0.755207    0.002332   23.297571 ^ fanout697/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     7    0.095532    1.048304    1.149225   24.446796 ^ fanout697/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net697 (net)
+                      1.048408    0.006231   24.453028 ^ fanout690/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     7    0.069472    0.771632    0.961830   25.414856 ^ fanout690/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net690 (net)
+                      0.771643    0.001741   25.416597 ^ fanout689/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+    10    0.109675    1.199425    1.241883   26.658480 ^ fanout689/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net689 (net)
+                      1.199461    0.003935   26.662415 ^ fanout688/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+    10    0.093826    1.030587    1.110287   27.772703 ^ fanout688/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net688 (net)
+                      1.030604    0.002498   27.775200 ^ u_pochoco.u_core.u_rf._2990_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                             27.775200   data arrival time
+
+                                 59.000000   59.000000   clock i_Clk (rise edge)
+                                  0.000000   59.000000   clock source latency
+     1    0.082682    0.239168    0.133848   59.133846 ^ i_Clk (in)
+                                                         i_Clk (net)
+                      0.240963    0.000000   59.133846 ^ clkbuf_0_i_Clk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+     8    0.333519    0.240878    0.280590   59.414436 ^ clkbuf_0_i_Clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+                                                         clknet_0_i_Clk (net)
+                      0.242985    0.010527   59.424965 ^ clkbuf_3_2__f_i_Clk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+     8    0.158011    0.138071    0.225867   59.650833 ^ clkbuf_3_2__f_i_Clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+                                                         clknet_3_2__leaf_i_Clk (net)
+                      0.138098    0.002061   59.652893 ^ clkbuf_leaf_5_i_Clk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+    17    0.089754    0.149072    0.209603   59.862495 ^ clkbuf_leaf_5_i_Clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+                                                         clknet_leaf_5_i_Clk (net)
+                      0.149072    0.000313   59.862808 ^ u_pochoco.u_core.u_rf._2990_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                 -0.250000   59.612812   clock uncertainty
+                                  0.000000   59.612812   clock reconvergence pessimism
+                                 -0.125503   59.487309   library recovery time
+                                             59.487309   data required time
+---------------------------------------------------------------------------------------------
+                                             59.487309   data required time
+                                            -27.775200   data arrival time
+---------------------------------------------------------------------------------------------
+                                             31.712107   slack (MET)
+
+
+Startpoint: u_pochoco.u_periph._469_
+            (rising edge-triggered flip-flop clocked by i_Clk)
+Endpoint: o_Segment2_B (output port clocked by i_Clk)
+Path Group: i_Clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock i_Clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1    0.082682    0.239168    0.147939    0.147939 ^ i_Clk (in)
+                                                         i_Clk (net)
+                      0.240963    0.000000    0.147939 ^ clkbuf_0_i_Clk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+     8    0.333519    0.240878    0.310123    0.458062 ^ clkbuf_0_i_Clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+                                                         clknet_0_i_Clk (net)
+                      0.243470    0.013357    0.471419 ^ clkbuf_3_7__f_i_Clk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+     8    0.177113    0.148821    0.256092    0.727511 ^ clkbuf_3_7__f_i_Clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+                                                         clknet_3_7__leaf_i_Clk (net)
+                      0.148877    0.003870    0.731381 ^ clkbuf_leaf_30_i_Clk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+    13    0.081576    0.139125    0.227493    0.958874 ^ clkbuf_leaf_30_i_Clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+                                                         clknet_leaf_30_i_Clk (net)
+                      0.139125    0.000478    0.959352 ^ u_pochoco.u_periph._469_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     2    0.007145    0.130474    0.593033    1.552385 ^ u_pochoco.u_periph._469_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         u_pochoco.u_periph.digit_q[3] (net)
+                      0.130474    0.000075    1.552460 ^ fanout626/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+    10    0.057706    0.646426    0.901191    2.453651 ^ fanout626/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net626 (net)
+                      0.646430    0.001034    2.454685 ^ u_pochoco.u_periph._226_/A3 (gf180mcu_fd_sc_mcu7t5v0__nand3_1)
+     2    0.014710    0.330637    0.186007    2.640692 v u_pochoco.u_periph._226_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand3_1)
+                                                         u_pochoco.u_periph._094_ (net)
+                      0.330637    0.000274    2.640965 v u_pochoco.u_periph._227_/A2 (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+     2    0.015061    0.258878    0.251741    2.892706 ^ u_pochoco.u_periph._227_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+                                                         u_pochoco.u_periph._095_ (net)
+                      0.258879    0.000305    2.893012 ^ u_pochoco.u_periph._236_/A2 (gf180mcu_fd_sc_mcu7t5v0__aoi22_1)
+     1    0.008376    0.228204    0.115633    3.008644 v u_pochoco.u_periph._236_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi22_1)
+                                                         u_pochoco.seg2[1] (net)
+                      0.228204    0.000209    3.008853 v u_pochoco._047_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     1    0.003526    0.103505    0.097651    3.106504 ^ u_pochoco._047_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         net22 (net)
+                      0.103505    0.000037    3.106541 ^ output22/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     1    0.074840    0.829010    1.011507    4.118047 ^ output22/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         o_Segment2_B (net)
+                      0.829014    0.001051    4.119098 ^ o_Segment2_B (out)
+                                              4.119098   data arrival time
+
+                                 59.000000   59.000000   clock i_Clk (rise edge)
+                                  0.000000   59.000000   clock network delay (propagated)
+                                 -0.250000   58.750000   clock uncertainty
+                                  0.000000   58.750000   clock reconvergence pessimism
+                                -20.000000   38.749996   output external delay
+                                             38.749996   data required time
+---------------------------------------------------------------------------------------------
+                                             38.749996   data required time
+                                             -4.119098   data arrival time
+---------------------------------------------------------------------------------------------
+                                             34.630898   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_leaf_48_i_Clk/Z                   10     19     -9 (VIOLATED)
+clkbuf_leaf_50_i_Clk/Z                   10     19     -9 (VIOLATED)
+clkbuf_leaf_26_i_Clk/Z                   10     18     -8 (VIOLATED)
+clkbuf_leaf_27_i_Clk/Z                   10     18     -8 (VIOLATED)
+clkbuf_leaf_29_i_Clk/Z                   10     18     -8 (VIOLATED)
+clkbuf_leaf_0_i_Clk/Z                    10     17     -7 (VIOLATED)
+clkbuf_leaf_15_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_17_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_2_i_Clk/Z                    10     17     -7 (VIOLATED)
+clkbuf_leaf_31_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_34_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_37_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_38_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_39_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_43_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_44_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_45_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_4_i_Clk/Z                    10     17     -7 (VIOLATED)
+clkbuf_leaf_53_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_54_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_55_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_56_i_Clk/Z                   10     17     -7 (VIOLATED)
+clkbuf_leaf_5_i_Clk/Z                    10     17     -7 (VIOLATED)
+clkbuf_leaf_6_i_Clk/Z                    10     17     -7 (VIOLATED)
+clkbuf_leaf_7_i_Clk/Z                    10     17     -7 (VIOLATED)
+clkbuf_leaf_9_i_Clk/Z                    10     17     -7 (VIOLATED)
+clkbuf_leaf_11_i_Clk/Z                   10     16     -6 (VIOLATED)
+clkbuf_leaf_13_i_Clk/Z                   10     16     -6 (VIOLATED)
+clkbuf_leaf_16_i_Clk/Z                   10     16     -6 (VIOLATED)
+clkbuf_leaf_21_i_Clk/Z                   10     16     -6 (VIOLATED)
+clkbuf_leaf_36_i_Clk/Z                   10     16     -6 (VIOLATED)
+clkbuf_leaf_47_i_Clk/Z                   10     16     -6 (VIOLATED)
+clkbuf_leaf_49_i_Clk/Z                   10     16     -6 (VIOLATED)
+clkbuf_leaf_51_i_Clk/Z                   10     16     -6 (VIOLATED)
+clkbuf_leaf_10_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_12_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_19_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_20_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_23_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_24_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_25_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_33_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_3_i_Clk/Z                    10     15     -5 (VIOLATED)
+clkbuf_leaf_41_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_42_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_46_i_Clk/Z                   10     15     -5 (VIOLATED)
+clkbuf_leaf_8_i_Clk/Z                    10     15     -5 (VIOLATED)
+clkbuf_leaf_14_i_Clk/Z                   10     14     -4 (VIOLATED)
+clkbuf_leaf_28_i_Clk/Z                   10     14     -4 (VIOLATED)
+clkbuf_leaf_35_i_Clk/Z                   10     14     -4 (VIOLATED)
+clkbuf_leaf_52_i_Clk/Z                   10     14     -4 (VIOLATED)
+clkbuf_leaf_57_i_Clk/Z                   10     14     -4 (VIOLATED)
+clkbuf_leaf_1_i_Clk/Z                    10     13     -3 (VIOLATED)
+clkbuf_leaf_30_i_Clk/Z                   10     13     -3 (VIOLATED)
+clkbuf_leaf_32_i_Clk/Z                   10     13     -3 (VIOLATED)
+
+max capacitance
+
+Pin                                        Limit         Cap       Slack
+------------------------------------------------------------------------
+clkbuf_0_i_Clk/Z                        0.200000    0.333519   -0.133519 (VIOLATED)
+clkbuf_3_3__f_i_Clk/Z                   0.200000    0.209521   -0.009521 (VIOLATED)
+fanout461/Z                             0.200000    0.201557   -0.001557 (VIOLATED)
+clkbuf_3_6__f_i_Clk/Z                   0.200000    0.201248   -0.001248 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 48 unannotated drivers.
+ clkload0/Z
+ clkload1/Z
+ clkload10/Z
+ clkload11/Z
+ clkload12/ZN
+ clkload13/Z
+ clkload14/ZN
+ clkload15/ZN
+ clkload16/ZN
+ clkload17/ZN
+ clkload18/ZN
+ clkload19/Z
+ clkload2/Z
+ clkload20/ZN
+ clkload21/ZN
+ clkload22/Z
+ clkload23/ZN
+ clkload24/Z
+ clkload25/ZN
+ clkload26/ZN
+ clkload27/ZN
+ clkload28/ZN
+ clkload29/ZN
+ clkload3/Z
+ clkload30/ZN
+ clkload31/ZN
+ clkload32/ZN
+ clkload33/Z
+ clkload34/Z
+ clkload35/ZN
+ clkload36/ZN
+ clkload37/ZN
+ clkload38/ZN
+ clkload39/ZN
+ clkload4/Z
+ clkload40/Z
+ clkload41/Z
+ clkload42/Z
+ clkload43/ZN
+ clkload44/Z
+ clkload45/ZN
+ clkload46/ZN
+ clkload47/ZN
+ clkload5/Z
+ clkload6/Z
+ clkload7/ZN
+ clkload8/ZN
+ clkload9/Z
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 55
+max cap violation count 4
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

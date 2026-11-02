@@ -1,0 +1,77 @@
+[
+  {
+    "pid": 2068,
+    "ppid": 2066,
+    "command": "bash -lc cd /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/files-pasted-by-the-user-misi/outputs/Proyecto3AC && bash scripts/experiment_batch.sh A_p80_u40 A_p60_u40 A_p100_u30 A_p100_u50 > results/environment/experiment_batch.log 2>&1"
+  },
+  {
+    "pid": 2075,
+    "ppid": 2068,
+    "command": "bash scripts/experiment_batch.sh A_p80_u40 A_p60_u40 A_p100_u30 A_p100_u50"
+  },
+  {
+    "pid": 3052,
+    "ppid": 3050,
+    "command": "bash -lc cd /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/files-pasted-by-the-user-misi/outputs/Proyecto3AC && bash scripts/run_flow.sh asic/configs/B_p100_u40.json B_v2_p100_u40 > results/environment/B_v2_p100_u40.log 2>&1"
+  },
+  {
+    "pid": 3059,
+    "ppid": 3052,
+    "command": "/nix/store/jj6jldlw37r8yy9kc1smrax9dhnjm2x4-python3-3.13.9/bin/python3.13 /nix/store/abmh7jj4bkf725p7rrrr98r9ax077v6d-python3.13-librelane-3.0.17/bin/.librelane-wrapped --pdk gf180mcuD --pdk-root /opt/proyecto3-tools/pdks --run-tag B_v2_p100_u40 --condensed -j 6 asic/configs/B_p100_u40.json"
+  },
+  {
+    "pid": 6599,
+    "ppid": 2075,
+    "command": "/nix/store/jj6jldlw37r8yy9kc1smrax9dhnjm2x4-python3-3.13.9/bin/python3.13 /nix/store/abmh7jj4bkf725p7rrrr98r9ax077v6d-python3.13-librelane-3.0.17/bin/.librelane-wrapped --pdk gf180mcuD --pdk-root /opt/proyecto3-tools/pdks --run-tag A_p100_u30_v2_20261028T153515Z --condensed -j 6 asic/configs/A_p100_u30.json"
+  },
+  {
+    "pid": 6760,
+    "ppid": 3059,
+    "command": "/nix/store/2y36a4sr078y15ick388dncqjdzmlxga-openroad-2026-02-17/bin/openroad -exit -no_splash -metrics /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/files-pasted-by-the-user-misi/outputs/Proyecto3AC/asic/configs/runs/B_v2_p100_u40/44-openroad-detailedrouting/or_metrics_out.json /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/drt.tcl"
+  },
+  {
+    "pid": 6863,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  },
+  {
+    "pid": 6866,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  },
+  {
+    "pid": 6868,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  },
+  {
+    "pid": 6869,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  },
+  {
+    "pid": 6872,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  },
+  {
+    "pid": 6873,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  },
+  {
+    "pid": 6876,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  },
+  {
+    "pid": 6878,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  },
+  {
+    "pid": 6879,
+    "ppid": 6599,
+    "command": "sta -no_splash -exit /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "source_run": "B_p100_u30_v2_resume_20261102T153658Z",
+  "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p90_20261102T172111683421Z",
+  "period_ns": 90.0,
+  "mode": "fixed routed layout; absolute IO constraints unchanged",
+  "pass_timing": false,
+  "corners": {
+    "max_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 57.906559408757374,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.1246314198231881
+    },
+    "max_ss_125C_4v50": {
+      "setup_wns": -0.3337916704182954,
+      "setup_tns": -0.7700151845207373,
+      "setup_ws": -0.3337916704182954,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.9020713320533942
+    },
+    "max_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 39.816236767945284,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.35705373002195245
+    },
+    "min_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 61.17374513430868,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.11968271157326489
+    },
+    "min_ss_125C_4v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 9.594700416855451,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.8909757628314863
+    },
+    "min_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 45.62991535992488,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.3504792111287871
+    },
+    "nom_ff_n40C_5v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 60.019788171661354,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.12196066723961578
+    },
+    "nom_ss_125C_4v50": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 5.094108390410826,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.8965100027211567
+    },
+    "nom_tt_025C_5v00": {
+      "setup_wns": 0,
+      "setup_tns": 0,
+      "setup_ws": 42.990234811066124,
+      "hold_wns": 0,
+      "hold_tns": 0,
+      "hold_ws": 0.3535889459087115
+    }
+  }
+}

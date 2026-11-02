@@ -1,0 +1,18 @@
+{
+  "reviewed_at": "2026-11-02T14:35:21.312942-03:00",
+  "reviewer": "Codex visual review",
+  "scope": "All 20 pages inspected as rendered contact sheets; comparison, timing and defence final pages inspected at full scale",
+  "result": "No clipping, overlapping text, broken tables or orphan table heading observed after final correction",
+  "pdfs": [
+    {
+      "file": "docs/Informe_Proyecto3.pdf",
+      "pages": 15,
+      "sha256": "bb124893a45a8dd1681d798029a50939cb3b8e8c75daf16f912a347a22de2793"
+    },
+    {
+      "file": "docs/Guia_Defensa_Proyecto3.pdf",
+      "pages": 5,
+      "sha256": "2674fb9191937d9f8d0b769c3470ca2f30f3baddef374c6770d1099c902ff824"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+read_verilog -Iasic/generated rtl/espino_core/espino_alu.v rtl/espino_core/espino_controller.v rtl/espino_core/espino_core.v rtl/espino_core/espino_decoder.v rtl/espino_core/espino_id_stage.v rtl/espino_core/espino_if_stage.v rtl/espino_core/espino_load_store_unit.v rtl/pochoco_spi_slave.v asic/variants/asic_memory_registered_addr.v asic/rtl/asic_top.v asic/rtl/cycle_counter.v asic/rtl/espino_register_file.v asic/rtl/pochoco_periph.v asic/rtl/pochoco_soc_asic.v asic/generated/program_rom.v
+chparam -set MemoryStrategy 0 asic_top
+hierarchy -top asic_top
+synth -top asic_top
+dfflibmap -liberty /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+abc -liberty /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+clean
+tee -o /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/files-pasted-by-the-user-misi/outputs/Proyecto3AC/results/synthesis/A_prod_hier_opt/stat.json stat -json -liberty /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+write_verilog -noattr -noexpr /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/files-pasted-by-the-user-misi/outputs/Proyecto3AC/results/synthesis/A_prod_hier_opt/netlist.v
+write_json /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/files-pasted-by-the-user-misi/outputs/Proyecto3AC/results/synthesis/A_prod_hier_opt/netlist.json

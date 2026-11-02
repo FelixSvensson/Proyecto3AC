@@ -1,0 +1,13 @@
+{
+  "source_run": "A_v2_p100_u40",
+  "status": "measured",
+  "method": "Adjacent periods actually verified by nine-corner STA on a fixed layout; absolute IO constraints unchanged",
+  "resolution_ns": 1,
+  "minimum_passing_period_ns": 59.0,
+  "adjacent_failing_period_ns": 58.0,
+  "frequency_mhz": 16.949152542372882,
+  "sampled_periods_ns": [
+    58.0,
+    59.0
+  ]
+}

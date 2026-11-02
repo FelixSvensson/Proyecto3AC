@@ -1,0 +1,26 @@
+VCD info: dumpfile sim/pochoco_periph_tb.vcd opened for output.
+
+TEST 1 - Cycle counter
+PASS: counter increased (2 -> 8)
+
+TEST 2 - LED write
+PASS: LED value = 0100
+
+TEST 3 - LED timestamp
+PASS: LED timestamp captured correctly
+PASS: current cycle is later than LED timestamp
+
+TEST 4 - Button input
+PASS: button value read correctly
+
+TEST 5 - New LED timestamp
+PASS: timestamp updated after new LED write
+
+TEST 6 - Display
+PASS: display shows hexadecimal 25
+
+--------------------------------
+ALL TESTS PASSED
+--------------------------------
+
+sim/pochoco_periph_tb.v:269: $finish called at 300000 (1ps)

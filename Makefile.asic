@@ -1,0 +1,20 @@
+PYTHON ?= python3
+.PHONY: generate verify synth final collect report
+generate:
+	$(PYTHON) scripts/prepare_asic.py
+	$(PYTHON) scripts/generate_game.py
+	$(PYTHON) scripts/generate_game.py --sim
+	$(PYTHON) scripts/make_optimized_memory.py
+	$(PYTHON) scripts/make_configs.py
+verify: generate
+	$(PYTHON) scripts/verify.py
+	$(PYTHON) assembler/test_rom.py
+	$(PYTHON) scripts/test_optimized.py
+synth: generate
+	bash scripts/hier_batch.sh
+final:
+	bash scripts/run_flow.sh asic/configs/final.json final_$$(date -u +%Y%m%dT%H%M%SZ)
+collect:
+	$(PYTHON) scripts/collect_results.py
+report:
+	$(PYTHON) scripts/build_documents.py

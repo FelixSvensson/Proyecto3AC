@@ -1,0 +1,20 @@
+'VSRC_LOC_FILES' was not given a value, which may make the results of IR drop analysis inaccurate. If you are not integrating a top-level chip for manufacture, you may ignore this warning, otherwise, see the documentation for 'VSRC_LOC_FILES'.
+KLAYOUT_DRC_RUNSET is unset. KLayout.DRC may not be supported for the gf180mcuD PDK. This step will be skipped.
+The KLayout DRC errors metric was not found. Are you sure the relevant step was run?
+Max Slew violations found in the following corners:
+* max_ss_125C_4v50
+* max_tt_025C_5v00
+* min_ss_125C_4v50
+* nom_ss_125C_4v50
+* nom_tt_025C_5v00
+Max Cap violations found in the following corners:
+* max_ff_n40C_5v50
+* max_ss_125C_4v50
+* max_tt_025C_5v00
+* min_ff_n40C_5v50
+* min_ss_125C_4v50
+* min_tt_025C_5v00
+* nom_ff_n40C_5v50
+* nom_ss_125C_4v50
+* nom_tt_025C_5v00
+klayout__drc_error__count not reported. KLayout.DRC may have been skipped.

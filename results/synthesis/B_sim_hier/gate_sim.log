@@ -1,0 +1,81 @@
+$ vvp work/B_sim_hier_gate.vvp
+VCD info: dumpfile game.vcd opened for output.
+STORE cycle=15 addr=80000004 value=00000000
+STORE cycle=17 addr=80000000 value=00000000
+STORE cycle=21 addr=80000004 value=0000000f
+STORE cycle=338 addr=80000000 value=00000000
+STORE cycle=361 addr=80000004 value=00000002
+REACTION cycle=500 value=136
+STORE cycle=551 addr=80000000 value=00000001
+CORRECT rounds=1 total=136 measured=136
+STORE cycle=564 addr=80000004 value=0000000f
+STORE cycle=881 addr=80000000 value=00000000
+STORE cycle=904 addr=80000004 value=00000002
+REACTION cycle=1043 value=136
+STORE cycle=1050 addr=80000000 value=000000ee
+WRONG_PRESERVED rounds=1 total=136
+STORE cycle=1057 addr=80000004 value=0000000f
+STORE cycle=1374 addr=80000000 value=00000000
+STORE cycle=1401 addr=80000004 value=00000004
+REACTION cycle=1540 value=136
+STORE cycle=1591 addr=80000000 value=00000001
+CORRECT rounds=2 total=272 measured=136
+STORE cycle=1604 addr=80000004 value=0000000f
+STORE cycle=1921 addr=80000000 value=00000000
+STORE cycle=1948 addr=80000004 value=00000004
+REACTION cycle=2087 value=136
+STORE cycle=2138 addr=80000000 value=00000001
+CORRECT rounds=3 total=408 measured=136
+STORE cycle=2151 addr=80000004 value=0000000f
+STORE cycle=2468 addr=80000000 value=00000000
+STORE cycle=2495 addr=80000004 value=00000004
+REACTION cycle=2634 value=136
+STORE cycle=2685 addr=80000000 value=00000001
+CORRECT rounds=4 total=544 measured=136
+STORE cycle=2698 addr=80000004 value=0000000f
+STORE cycle=3015 addr=80000000 value=00000000
+STORE cycle=3042 addr=80000004 value=00000004
+REACTION cycle=3181 value=136
+STORE cycle=3232 addr=80000000 value=00000001
+CORRECT rounds=5 total=680 measured=136
+STORE cycle=3245 addr=80000004 value=0000000f
+STORE cycle=3562 addr=80000000 value=00000000
+STORE cycle=3589 addr=80000004 value=00000004
+REACTION cycle=3728 value=136
+STORE cycle=3779 addr=80000000 value=00000001
+CORRECT rounds=6 total=816 measured=136
+STORE cycle=3792 addr=80000004 value=0000000f
+STORE cycle=4109 addr=80000000 value=00000000
+STORE cycle=4136 addr=80000004 value=00000004
+REACTION cycle=4275 value=136
+STORE cycle=4326 addr=80000000 value=00000001
+CORRECT rounds=7 total=952 measured=136
+STORE cycle=4339 addr=80000004 value=0000000f
+STORE cycle=4656 addr=80000000 value=00000000
+STORE cycle=4683 addr=80000004 value=00000004
+REACTION cycle=4822 value=136
+STORE cycle=4873 addr=80000000 value=00000001
+CORRECT rounds=8 total=1088 measured=136
+STORE cycle=4886 addr=80000004 value=0000000f
+STORE cycle=5203 addr=80000000 value=00000000
+STORE cycle=5230 addr=80000004 value=00000004
+REACTION cycle=5369 value=136
+STORE cycle=5420 addr=80000000 value=00000001
+CORRECT rounds=9 total=1224 measured=136
+STORE cycle=5433 addr=80000004 value=0000000f
+STORE cycle=5750 addr=80000000 value=00000000
+STORE cycle=5777 addr=80000004 value=00000004
+REACTION cycle=5916 value=136
+STORE cycle=5967 addr=80000000 value=00000001
+CORRECT rounds=10 total=1360 measured=136
+STORE cycle=5976 addr=80000004 value=00000000
+STORE cycle=6023 addr=80000000 value=00000001
+PASS GAME rounds=10 total=1360 bcd=00000001 RAM_accesses=0
+STORE cycle=6321 addr=80000004 value=00000000
+STORE cycle=6323 addr=80000000 value=00000000
+STORE cycle=6327 addr=80000004 value=0000000f
+STORE cycle=6341 addr=80000004 value=00000000
+STORE cycle=6343 addr=80000000 value=00000000
+STORE cycle=6347 addr=80000004 value=0000000f
+PASS RESET_AND_RESTART
+sim/asic_game_tb.v:89: $finish called at 634650000 (1ps)

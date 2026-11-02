@@ -1,0 +1,22 @@
+{
+  "capture": "post-run audit of preserved input files",
+  "files": {
+    "rtl/espino_core/espino_alu.v": "ad18db07f3aec22bc224605d96fb13df2b5ae6def60c8334fa1e1f735cc5d67c",
+    "rtl/espino_core/espino_controller.v": "d977623b7716227e72caa3cf062f89f1b827cd777b5aef13865ec122b672c0fd",
+    "rtl/espino_core/espino_core.v": "80a6b767c7f80c2b8bc54e0ef78647b2a508b58168a107c97c672580eb594191",
+    "rtl/espino_core/espino_decoder.v": "4a30890f07d4024830fa13738c02b3ae31ac3c2a966ab680b46332bc58db225a",
+    "rtl/espino_core/espino_id_stage.v": "d87f5f38a201efaec9c4d215e95bb43bcc4517f747a854544ccf3d94c5a61b58",
+    "rtl/espino_core/espino_if_stage.v": "99fd082a03223601cb3b54428dd346a85f4ac7dc0b17ab1cdd9419c744e816c1",
+    "rtl/espino_core/espino_load_store_unit.v": "80a2db9e34d79fbe9876b06748b9aea27ae66e7d1293fae81f4c861e5d22a14d",
+    "rtl/pochoco_spi_slave.v": "fd7c0dbcad69e747939ad0e0cf7f232f5311f0dea9b1753df8edb404f676de98",
+    "asic/variants/asic_memory_registered_addr.v": "375fbb60763f569fd7e9f951cc64dac8789ebf285ea351e350b3a92502d94895",
+    "asic/rtl/asic_top.v": "d220251a58c4a7cb436da91da099ada32b2d78c4ddb07c342c652cee3bdf526e",
+    "asic/rtl/cycle_counter.v": "a1620c0dc148c835511a08f2cae36fbfc7d12fa93e1d2f4eab2b86d495a68bcc",
+    "asic/rtl/espino_register_file.v": "12d381303597f8eb5ec74918aa70820b6718b2c5b6ced3c6c83eda4ec3ab82b5",
+    "asic/rtl/pochoco_periph.v": "a1225dab8cf293c14a1bcf23b88ae0118ab4a1c0f48283ed4026c2f893c7595c",
+    "asic/rtl/pochoco_soc_asic.v": "afde3683d9a05ecd8377d0ca47af5fa4d1726c637c533a1ee9497cd4fd2f064c",
+    "asic/generated/program_rom.v": "0c88dd943e31d4f9d34b7ac4a77b1cbcf4215b7973a98358a63914a0cf7e4d61",
+    "asic/generated/program_meta.vh": "f195f38c610bfc8f99f208bc0a8e3e322b02f3bec2c7d05c4d9e3b1e82a72cbd",
+    "asic/generated/program_reset.vh": "9ee9a4fd9d1e28e2f35ad47ab1b1f9ba77569387203e14378696565ee3b7b663"
+  }
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "source_run": "A_p100_u30_v2_resume",
+    "checked_samples": [
+      {
+        "period_ns": 29,
+        "sta_run": "STA_fixed_A_p100_u30_v2_resume_p29_20261102T035434098016Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 44,
+        "sta_run": "STA_fixed_A_p100_u30_v2_resume_p44_20261102T035500886995Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 51,
+        "sta_run": "STA_fixed_A_p100_u30_v2_resume_p51_20261102T035527702480Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 55,
+        "sta_run": "STA_fixed_A_p100_u30_v2_resume_p55_20261102T035557933213Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 56,
+        "sta_run": "STA_fixed_A_p100_u30_v2_resume_p56_20261102T035649818594Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 57,
+        "sta_run": "STA_fixed_A_p100_u30_v2_resume_p57_20261102T035622935509Z",
+        "pass_timing": true
+      },
+      {
+        "period_ns": 59,
+        "sta_run": "STA_fixed_A_p100_u30_v2_resume_p59_20261102T035410673901Z",
+        "pass_timing": true
+      },
+      {
+        "period_ns": 100,
+        "sta_run": "STA_fixed_A_p100_u30_v2_resume_p100_20261102T035345660749Z",
+        "pass_timing": true
+      }
+    ],
+    "audit": "All executed samples share ODB/SPEF paths and identical SDC except period; hashes captured after execution",
+    "physical_files": [
+      {
+        "path": "asic/configs/runs/A_p100_u30_v2_20261028T153515Z/53-odb-cellfrequencytables/asic_top.odb",
+        "sha256": "251d6c7b3e8e5c756111037ac49e5714204ac42ce9c3c24fea63ef003c4c48c9"
+      },
+      {
+        "path": "asic/configs/runs/A_p100_u30_v2_20261028T153515Z/54-openroad-rcx/nom/asic_top.nom.spef",
+        "sha256": "60c612f1c8dd39090136779acc5c8d58373570b7a9461dc0ce836076f200c18a"
+      },
+      {
+        "path": "asic/configs/runs/A_p100_u30_v2_20261028T153515Z/54-openroad-rcx/min/asic_top.min.spef",
+        "sha256": "5a5dfac9d67c49b6b22dd739b8755bd638154d61a1c8e6fe7643ae9696f019e3"
+      },
+      {
+        "path": "asic/configs/runs/A_p100_u30_v2_20261028T153515Z/54-openroad-rcx/max/asic_top.max.spef",
+        "sha256": "36aa97c28bb3ea844a8f16b7d057f5cd62497d70a08e9d1bf8a14c465d43dabf"
+      }
+    ]
+  },
+  {
+    "source_run": "B_p100_u30_v2_resume_20261102T153658Z",
+    "checked_samples": [
+      {
+        "period_ns": 46,
+        "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p46_20261102T171643438064Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 69,
+        "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p69_20261102T171750966598Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 81,
+        "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p81_20261102T171858418065Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 87,
+        "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p87_20261102T172005593847Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 90,
+        "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p90_20261102T172111683421Z",
+        "pass_timing": false
+      },
+      {
+        "period_ns": 91,
+        "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p91_20261102T172221975812Z",
+        "pass_timing": true
+      },
+      {
+        "period_ns": 93,
+        "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p93_20261102T171534552034Z",
+        "pass_timing": true
+      },
+      {
+        "period_ns": 100,
+        "sta_run": "STA_fixed_B_p100_u30_v2_resume_20261102T153658Z_p100_20261102T171428805999Z",
+        "pass_timing": true
+      }
+    ],
+    "audit": "All executed samples share ODB/SPEF paths and identical SDC except period; hashes captured after execution",
+    "physical_files": [
+      {
+        "path": "asic/configs/runs/B_p100_u30_v2_resume_20261102T153658Z/10-odb-cellfrequencytables/asic_top.odb",
+        "sha256": "2ad4abb0bb7f6c20ecd31f230dd63735cbcce18ddc8917f5989b0ce7c79b06fe"
+      },
+      {
+        "path": "asic/configs/runs/B_p100_u30_v2_resume_20261102T153658Z/11-openroad-rcx/nom/asic_top.nom.spef",
+        "sha256": "0749f1536da121df96c9fdd72f5b6c54bf7e1b541e1713d01c5978176ae3672f"
+      },
+      {
+        "path": "asic/configs/runs/B_p100_u30_v2_resume_20261102T153658Z/11-openroad-rcx/min/asic_top.min.spef",
+        "sha256": "801123886cc9c594d60ef137c37574eb8dbb169dd265fb0f26a337d6ffc8dd50"
+      },
+      {
+        "path": "asic/configs/runs/B_p100_u30_v2_resume_20261102T153658Z/11-openroad-rcx/max/asic_top.max.spef",
+        "sha256": "f8252fcb969d1ca3f63418cf9333fc43ac5b76e1f0017e4dab31faae6cc0e6d2"
+      }
+    ]
+  }
+]

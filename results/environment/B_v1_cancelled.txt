@@ -1,0 +1,5 @@
+La corrida exploratoria B_gf180_p100_u40 (v1, aplanamiento temprano) se detuvo
+durante detailed routing para evitar duplicar el cálculo de B_v2_p100_u40,
+que preserva trazabilidad y es la contraparte comparable de A_v2.
+No se atribuye cierre de DRC/LVS/timing a la corrida interrumpida. Sus resultados
+de síntesis existentes siguen siendo evidencia exploratoria, no resultados finales.

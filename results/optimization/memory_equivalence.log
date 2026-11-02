@@ -1,0 +1,3 @@
+$ vvp work/mem_eq.vvp
+PASS MEMORY_EQUIVALENCE 2000 deterministic randomized cycles
+sim/memory_equivalence_tb.v:29: $finish called at 20006000 (1ps)

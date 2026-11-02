@@ -1,0 +1,26 @@
+{
+  "original_script": "/nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/drt.tcl",
+  "original_sha256": "d389d9e6d75bbb82552321f689d92a2e0392684142c11ffabe59c757ece59461",
+  "generated_sha256": "6b5b83e01100bb8654ceadc5d7447d5468b9114f6396aab7d85225d3d00b221c",
+  "changes": {
+    "or_seed": 43,
+    "or_k": 1
+  },
+  "unchanged": "Classic step sequence, all checkers, RTL, PDK, clock, utilization",
+  "arguments": [
+    "--pdk",
+    "gf180mcuD",
+    "--pdk-root",
+    "/opt/proyecto3-tools/pdks",
+    "--run-tag",
+    "B_v2_p100_u40_ordered_resume",
+    "--condensed",
+    "-j",
+    "4",
+    "asic/configs/B_eco_resume.json",
+    "--from",
+    "OpenROAD.DetailedRouting",
+    "-i",
+    "results/environment/B_eco_resume_state.json"
+  ]
+}

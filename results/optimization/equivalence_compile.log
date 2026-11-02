@@ -1,0 +1,1 @@
+$ iverilog -g2012 -I sim/generated -s memory_equivalence_tb -o work/mem_eq.vvp sim/memory_equivalence_tb.v asic/rtl/asic_memory.v work/asic_memory_opt.v sim/generated/program_rom.v

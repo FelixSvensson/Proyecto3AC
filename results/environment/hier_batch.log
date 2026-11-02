@@ -1,0 +1,111 @@
+i221_1": 93,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 100,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 488,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 271,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 866,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__mux2_1": 770,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 643,
+            "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 126,
+            "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 43,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 303,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 72,
+            "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 91,
+            "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 90,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 273,
+            "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 43,
+            "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 21,
+            "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 60,
+            "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 74,
+            "gf180mcu_fd_sc_mcu7t5v0__or2_1": 69,
+            "gf180mcu_fd_sc_mcu7t5v0__or3_1": 9,
+            "gf180mcu_fd_sc_mcu7t5v0__or4_1": 4,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 26,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 74,
+            "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 16,
+            "$paramod\\pochoco_soc_asic\\MemoryStrategy=32'00000000000000000000000000000000": 1
+         }
+      }
+}
+
+21. Executing Verilog backend.
+Dumping module `$paramod\asic_memory\Strategy=32'00000000000000000000000000000000'.
+Dumping module `$paramod\espino_core\BootAddr=32'00000000000000000000000000000000'.
+Dumping module `$paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000'.
+Dumping module `$paramod\pochoco_soc_asic\MemoryStrategy=32'00000000000000000000000000000000'.
+Dumping module `\asic_top'.
+Dumping module `\cycle_counter'.
+Dumping module `\espino_alu'.
+Dumping module `\espino_controller'.
+Dumping module `\espino_decoder'.
+Dumping module `\espino_id_stage'.
+Dumping module `\espino_load_store_unit'.
+Dumping module `\espino_register_file'.
+Dumping module `\pochoco_periph'.
+Dumping module `\pochoco_spi_slave'.
+Dumping module `\program_rom'.
+
+22. Executing JSON backend.
+
+Warnings: 2 unique messages, 4 total
+End of script. Logfile hash: 6efee268c9, CPU: user 2.17s system 0.15s, MEM: 84.93 MB peak
+Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+Time spent: 72% 2x abc (5 sec), 4% 33x opt_expr (0 sec), ...
+
+A_prod_hier
+d_sc_mcu7t5v0__aoi22_1": 1701,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 1296,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 3130,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 1163,
+            "gf180mcu_fd_sc_mcu7t5v0__mux2_1": 4195,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 1020,
+            "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 678,
+            "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 640,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 394,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 107,
+            "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 217,
+            "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 41,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 241,
+            "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 14,
+            "gf180mcu_fd_sc_mcu7t5v0__oai222_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 68,
+            "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 48,
+            "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 333,
+            "gf180mcu_fd_sc_mcu7t5v0__oai33_1": 246,
+            "gf180mcu_fd_sc_mcu7t5v0__or2_1": 61,
+            "gf180mcu_fd_sc_mcu7t5v0__or3_1": 14,
+            "gf180mcu_fd_sc_mcu7t5v0__or4_1": 43,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 24,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 78,
+            "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 16,
+            "$paramod\\pochoco_soc_asic\\MemoryStrategy=32'00000000000000000000000000000001": 1
+         }
+      }
+}
+
+21. Executing Verilog backend.
+Dumping module `$paramod\asic_memory\Strategy=32'00000000000000000000000000000001'.
+Dumping module `$paramod\espino_core\BootAddr=32'00000000000000000000000000000000'.
+Dumping module `$paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000'.
+Dumping module `$paramod\pochoco_soc_asic\MemoryStrategy=32'00000000000000000000000000000001'.
+Dumping module `\asic_top'.
+Dumping module `\cycle_counter'.
+Dumping module `\espino_alu'.
+Dumping module `\espino_controller'.
+Dumping module `\espino_decoder'.
+Dumping module `\espino_id_stage'.
+Dumping module `\espino_load_store_unit'.
+Dumping module `\espino_register_file'.
+Dumping module `\pochoco_periph'.
+Dumping module `\pochoco_spi_slave'.
+
+22. Executing JSON backend.
+
+Warnings: 3 unique messages, 4 total
+End of script. Logfile hash: 46f68f4899, CPU: user 8.01s system 0.30s, MEM: 119.93 MB peak
+Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+Time spent: 57% 2x abc (9 sec), 6% 25x opt_clean (1 sec), ...
+
+B_prod_hier

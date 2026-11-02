@@ -1,0 +1,106 @@
+[
+  {
+    "run": "final_A_v2_p100_u40",
+    "closed_explicit_rubric_criteria": true,
+    "corners": [
+      "max_ff_n40C_5v50",
+      "max_ss_125C_4v50",
+      "max_tt_025C_5v00",
+      "min_ff_n40C_5v50",
+      "min_ss_125C_4v50",
+      "min_tt_025C_5v00",
+      "nom_ff_n40C_5v50",
+      "nom_ss_125C_4v50",
+      "nom_tt_025C_5v00"
+    ],
+    "checks": {
+      "magic__drc_error__count": 0,
+      "design__lvs_error__count": 0,
+      "antenna__violating__nets": 0
+    },
+    "electrical_worst_counts": {
+      "slew": 2196,
+      "fanout": 57,
+      "cap": 4
+    },
+    "views": [
+      {
+        "file": "results/runs/final_A_v2_p100_u40/views/gds/asic_top.gds",
+        "sha256": "e33adc7cea79e414ba9b1ca496856e1476600dea75347b407fbb2b94da75a557",
+        "bytes": 9715636
+      },
+      {
+        "file": "results/runs/final_A_v2_p100_u40/views/lef/asic_top.lef",
+        "sha256": "102a3d197cac185d2f9c3ce3b975df1301fbbf715f4acc59c43d9fdf2e84561c",
+        "bytes": 10312
+      },
+      {
+        "file": "results/runs/final_A_v2_p100_u40/views/def/asic_top.def",
+        "sha256": "10d07792272d286ebc86d5f8071984b2dc6bf81d09e8d48116145fc6764069a6",
+        "bytes": 8367171
+      },
+      {
+        "file": "results/runs/final_A_v2_p100_u40/views/nl/asic_top.nl.v",
+        "sha256": "46dae89effc38a25d281c57b5dd1889ea895b0bd6b2025740441c546a9b3e68f",
+        "bytes": 2194513
+      },
+      {
+        "file": "results/runs/final_A_v2_p100_u40/views/sdc/asic_top.sdc",
+        "sha256": "2bba7b6a1f14cd9dcbc30f58d9c568f32f9c112239bbff4a9815705ed8d6011a",
+        "bytes": 5891
+      }
+    ]
+  },
+  {
+    "run": "B_p100_u30_v2_resume_20261102T153658Z",
+    "closed_explicit_rubric_criteria": true,
+    "corners": [
+      "max_ff_n40C_5v50",
+      "max_ss_125C_4v50",
+      "max_tt_025C_5v00",
+      "min_ff_n40C_5v50",
+      "min_ss_125C_4v50",
+      "min_tt_025C_5v00",
+      "nom_ff_n40C_5v50",
+      "nom_ss_125C_4v50",
+      "nom_tt_025C_5v00"
+    ],
+    "checks": {
+      "magic__drc_error__count": 0,
+      "design__lvs_error__count": 0,
+      "antenna__violating__nets": 0
+    },
+    "electrical_worst_counts": {
+      "slew": 15634,
+      "fanout": 291,
+      "cap": 1923
+    },
+    "views": [
+      {
+        "file": "results/runs/B_p100_u30_v2_resume_20261102T153658Z/views/gds/asic_top.gds",
+        "sha256": "abc27956c1dab4936e267c201830b7bf1cd3c08d8be25fc04db05271505455a1",
+        "bytes": 47133284
+      },
+      {
+        "file": "results/runs/B_p100_u30_v2_resume_20261102T153658Z/views/lef/asic_top.lef",
+        "sha256": "e7b3f1ecddf5b8322779e4e0ef3bfc0a9aa3ae2a4b7409d6e74bb8a0c7605e95",
+        "bytes": 40049
+      },
+      {
+        "file": "results/runs/B_p100_u30_v2_resume_20261102T153658Z/views/def/asic_top.def",
+        "sha256": "db79b8e127c565667b1c1fe95276112beb0f330b9d3510652cc14fa9a49f2e96",
+        "bytes": 42053172
+      },
+      {
+        "file": "results/runs/B_p100_u30_v2_resume_20261102T153658Z/views/nl/asic_top.nl.v",
+        "sha256": "9487295d4bc767b0c898c02910039ba11cb186809baeb162053a7e618f79f6db",
+        "bytes": 8879324
+      },
+      {
+        "file": "results/runs/B_p100_u30_v2_resume_20261102T153658Z/views/sdc/asic_top.sdc",
+        "sha256": "2bba7b6a1f14cd9dcbc30f58d9c568f32f9c112239bbff4a9815705ed8d6011a",
+        "bytes": 5891
+      }
+    ]
+  }
+]

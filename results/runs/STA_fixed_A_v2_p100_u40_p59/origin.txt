@@ -1,0 +1,1 @@
+asic/configs/runs/STA_fixed_A_v2_p100_u40_p59

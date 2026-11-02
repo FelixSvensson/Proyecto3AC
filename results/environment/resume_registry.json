@@ -1,0 +1,13 @@
+{
+  "B_v2_p100_u40_resume": "B_v2_p100_u40",
+  "A_p100_u30_v2_resume": "A_p100_u30_v2_20261028T153515Z",
+  "B_v2_p100_u40_recovery": "B_v2_p100_u40",
+  "A_p100_u50_v2_recovery": "A_p100_u50_v2_20261028T175514Z",
+  "B_v2_p100_u40_snapshot_resume": "B_v2_p100_u40",
+  "B_v2_p100_u40_cold_resume": "B_v2_p100_u40",
+  "B_v2_p100_u40_eco_resume": "B_v2_p100_u40",
+  "B_v2_p100_u40_ordered_resume": "B_v2_p100_u40",
+  "B_p100_u30_v2_resume_20261102T151832Z": "B_p100_u30_v2_20261102T035316Z",
+  "B_p100_u30_v2_resume_20261102T153658Z": "B_p100_u30_v2_20261102T035316Z",
+  "B_v2_p100_u40_detour_20261102T155443Z": "B_v2_p100_u40"
+}

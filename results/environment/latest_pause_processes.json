@@ -1,0 +1,12 @@
+[
+  {
+    "pid": 389,
+    "ppid": 304,
+    "command": "/nix/store/jj6jldlw37r8yy9kc1smrax9dhnjm2x4-python3-3.13.9/bin/python3.13 /nix/store/abmh7jj4bkf725p7rrrr98r9ax077v6d-python3.13-librelane-3.0.17/bin/.librelane-wrapped --pdk gf180mcuD --pdk-root /opt/proyecto3-tools/pdks --run-tag B_p100_u30_v2_resume_20261102T151832Z --condensed -j 6 asic/configs/B_p100_u30.json --from OpenROAD.STAMidPNR-2 -i /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/files-pasted-by-the-user-misi/outputs/Proyecto3AC/asic/configs/runs/B_p100_u30_v2_20261102T035316Z/37-openroad-resizertimingpostcts/state_out.json"
+  },
+  {
+    "pid": 435,
+    "ppid": 389,
+    "command": "/nix/store/2y36a4sr078y15ick388dncqjdzmlxga-openroad-2026-02-17/bin/openroad -exit -no_splash -metrics /mnt/c/Users/Lenovo/Documents/Codex/2026-10-28/files-pasted-by-the-user-misi/outputs/Proyecto3AC/asic/configs/runs/B_p100_u30_v2_resume_20261102T151832Z/07-openroad-detailedrouting/or_metrics_out.json /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/drt.tcl"
+  }
+]

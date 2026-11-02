@@ -1,0 +1,11 @@
+{
+  "source_sha256": "a97c364b735c2b9f4fbd7ffbdecc4142c352fe8b37ec05aa124acb581a68fe46",
+  "output_sha256": "ccddc18777a23c8ed361ac15e7ec22f7780d1eb2c6ed15a493df13dc85e347b3",
+  "removed_physical_wire_net": "u_pochoco.u_ram._08839_",
+  "logical_pin_count": 3,
+  "logical_connectivity_sha256_before": "c875f55cceb2417ab72a98b7c48e0022d548a17715bd072f7c4cb1215cdea2e1",
+  "logical_connectivity_sha256_after": "c875f55cceb2417ab72a98b7c48e0022d548a17715bd072f7c4cb1215cdea2e1",
+  "operation": "Remove only the selected dbWire in a copy, then reconstruct it with DetailedRouting",
+  "threads": 2,
+  "required_validation": "Full DRC, LVS, antenna and nine-corner STA"
+}

@@ -1,0 +1,982 @@
+Version 54435919abffb937387ec956209f9cf5fd2dfbee not found locally, attempting 
+to download…
+Downloading common.tar.zst… ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Downloading gf180mcu_fd_io.tar.zst… ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Downloading gf180mcu_fd_ip_sram.tar.zst… ━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Downloading gf180mcu_fd_pr.tar.zst… ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Downloading gf180mcu_fd_sc_mcu7t5v0.tar.zst… ━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Downloading gf180mcu_fd_sc_mcu9t5v0.tar.zst… ━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+[11:56:56] [I] Loading the design configuration file has generated config.py:740
+               the following warnings:                                          
+[11:56:56] [W] The configuration variable 'PL_TARGET_DENSITY' is   config.py:744
+               deprecated. Please check the docs for the usage on               
+               the replacement variable 'PL_TARGET_DENSITY_PCT'.                
+[11:56:56] [I] Starting a new run of the 'Classic' flow with the tag flow.py:654
+               'RUN_2026-10-28_11-56-56'.                                       
+[11:56:56] [I] Starting…                                       sequential.py:339
+[11:56:56] [V] Running 'Verilator.Lint' at                          step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/01-veri             
+               lator-lint'…                                                     
+[11:56:56] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/01-veri             
+               lator-lint/verilator-lint.log'…                                  
+[11:56:57] [V] Running 'Checker.LintTimingConstructs' at            step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/02-chec             
+               ker-linttimingconstructs'…                                       
+[11:56:57] [I] Check for Lint Timing Errors clear.                checker.py:412
+[11:56:57] [V] Running 'Checker.LintErrors' at                      step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/03-chec             
+               ker-linterrors'…                                                 
+[11:56:57] [I] Check for Lint errors clear.                       checker.py:131
+[11:56:57] [V] Running 'Checker.LintWarnings' at                    step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/04-chec             
+               ker-lintwarnings'…                                               
+[11:56:57] [I] Check for Lint warnings clear.                     checker.py:131
+[11:56:57] [V] Running 'Yosys.JsonHeader' at                        step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/05-yosy             
+               s-jsonheader'…                                                   
+[11:56:57] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/05-yosy             
+               s-jsonheader/yosys-jsonheader.log'…                              
+[11:56:57] [V] Running 'Yosys.Synthesis' at                         step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/06-yosy             
+               s-synthesis'…                                                    
+[11:56:57] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/06-yosy             
+               s-synthesis/yosys-synthesis.log'…                                
+[11:56:59] [V] Parsing synthesis checks…                            pyosys.py:59
+[11:56:59] [V] Parsing synthesis checks…                            pyosys.py:59
+[11:56:59] [V] Running 'Checker.YosysUnmappedCells' at              step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/07-chec             
+               ker-yosysunmappedcells'…                                         
+[11:56:59] [I] Check for Unmapped Yosys instances clear.          checker.py:131
+[11:56:59] [V] Running 'Checker.YosysSynthChecks' at                step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/08-chec             
+               ker-yosyssynthchecks'…                                           
+[11:56:59] [I] Check for Yosys check errors clear.                checker.py:131
+[11:56:59] [V] Running 'Checker.NetlistAssignStatements' at         step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/09-chec             
+               ker-netlistassignstatements'…                                    
+[11:56:59] [V] Running 'OpenROAD.CheckSDCFiles' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/10-open             
+               road-checksdcfiles'…                                             
+[11:56:59] [V] Running 'OpenROAD.CheckMacroInstances' at            step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/11-open             
+               road-checkmacroinstances'…                                       
+[11:56:59] [I] No macros found, skipping instance check…         openroad.py:694
+[11:56:59] [V] Running 'OpenROAD.STAPrePNR' at                      step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/12-open             
+               road-staprepnr'…                                                 
+[11:56:59] [I] Starting STA for the nom_tt_025C_5v00 timing      openroad.py:749
+               corner…                                                          
+[11:56:59] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/12-open             
+               road-staprepnr/nom_tt_025C_5v00/sta.log'…                        
+[11:56:59] [I] Starting STA for the nom_ss_125C_4v50 timing      openroad.py:749
+               corner…                                                          
+[11:56:59] [I] Starting STA for the nom_ff_n40C_5v50 timing      openroad.py:749
+               corner…                                                          
+[11:56:59] [I] Skipping corner min_tt_025C_5v00 for STA          openroad.py:787
+               (identical to nom_tt_025C_5v00 at this stage)…                   
+[11:56:59] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/12-open             
+               road-staprepnr/nom_ff_n40C_5v50/sta.log'…                        
+[11:56:59] [I] Skipping corner min_ss_125C_4v50 for STA          openroad.py:787
+               (identical to nom_ss_125C_4v50 at this stage)…                   
+[11:56:59] [I] Skipping corner min_ff_n40C_5v50 for STA          openroad.py:787
+               (identical to nom_ff_n40C_5v50 at this stage)…                   
+[11:56:59] [I] Skipping corner max_tt_025C_5v00 for STA          openroad.py:787
+               (identical to nom_tt_025C_5v00 at this stage)…                   
+[11:56:59] [I] Skipping corner max_ss_125C_4v50 for STA          openroad.py:787
+               (identical to nom_ss_125C_4v50 at this stage)…                   
+[11:56:59] [I] Skipping corner max_ff_n40C_5v50 for STA          openroad.py:787
+               (identical to nom_ff_n40C_5v50 at this stage)…                   
+[11:56:59] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/12-open             
+               road-staprepnr/nom_ss_125C_4v50/sta.log'…                        
+[11:57:00] [I] Finished STA for the nom_tt_025C_5v00 timing      openroad.py:764
+               corner.                                                          
+[11:57:00] [I] Finished STA for the nom_ss_125C_4v50 timing      openroad.py:764
+               corner.                                                          
+[11:57:00] [I] Finished STA for the nom_ff_n40C_5v50 timing      openroad.py:764
+               corner.                                                          
+[11:57:00] [V] Running 'OpenROAD.Floorplan' at                      step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/13-open             
+               road-floorplan'…                                                 
+[11:57:00] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/13-open             
+               road-floorplan/openroad-floorplan.log'…                          
+[11:57:01] [V] Running 'OpenROAD.DumpRCValues' at                   step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/14-open             
+               road-dumprcvalues'…                                              
+[11:57:01] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/14-open             
+               road-dumprcvalues/openroad-dumprcvalues.log'…                    
+[11:57:02] [V] Running 'Odb.CheckMacroAntennaProperties' at         step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/15-odb-             
+               checkmacroantennaproperties'…                                    
+[11:57:02] [I] No cells provided, skipping                            odb.py:234
+               'Odb.CheckMacroAntennaProperties'…                               
+[11:57:02] [V] Running 'Odb.SetPowerConnections' at                 step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/16-odb-             
+               setpowerconnections'…                                            
+[11:57:02] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/16-odb-             
+               setpowerconnections/odb-setpowerconnections.log'…                
+[11:57:03] [V] Running 'Odb.ManualMacroPlacement' at                step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/17-odb-             
+               manualmacroplacement'…                                           
+[11:57:03] [I] No instances found, skipping                           odb.py:468
+               'Odb.ManualMacroPlacement'…                                      
+[11:57:03] [V] Running 'OpenROAD.CutRows' at                        step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/18-open             
+               road-cutrows'…                                                   
+[11:57:03] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/18-open             
+               road-cutrows/openroad-cutrows.log'…                              
+[11:57:04] [V] Running 'OpenROAD.TapEndcapInsertion' at             step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/19-open             
+               road-tapendcapinsertion'…                                        
+[11:57:04] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/19-open             
+               road-tapendcapinsertion/openroad-tapendcapinsertion.             
+               log'…                                                            
+[11:57:05] [V] Running 'Odb.AddPDNObstructions' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/20-odb-             
+               addpdnobstructions'…                                             
+[11:57:05] [I] 'PDN_OBSTRUCTIONS' is not defined. Skipping            odb.py:589
+               'Odb.AddPDNObstructions'…                                        
+[11:57:05] [V] Running 'OpenROAD.GeneratePDN' at                    step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/21-open             
+               road-generatepdn'…                                               
+[11:57:05] [I] 'PDN_CFG' not explicitly set, setting it to      openroad.py:1483
+               /nix/store/1pkfh3p98m8i3jp642n3bznpjfq65i6m-pyth                 
+               on3-3.13.9-env/lib/python3.13/site-packages/libr                 
+               elane/scripts/openroad/common/pdn_cfg.tcl…                       
+[11:57:05] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/21-open             
+               road-generatepdn/openroad-generatepdn.log'…                      
+[11:57:05] [V] Running 'Odb.RemovePDNObstructions' at               step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/22-odb-             
+               removepdnobstructions'…                                          
+[11:57:05] [I] 'PDN_OBSTRUCTIONS' is not defined. Skipping            odb.py:589
+               'Odb.RemovePDNObstructions'…                                     
+[11:57:05] [V] Running 'Odb.AddRoutingObstructions' at              step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/23-odb-             
+               addroutingobstructions'…                                         
+[11:57:05] [I] 'ROUTING_OBSTRUCTIONS' is not defined. Skipping        odb.py:589
+               'Odb.AddRoutingObstructions'…                                    
+[11:57:05] [V] Running 'OpenROAD.GlobalPlacementSkipIO' at          step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/24-open             
+               road-globalplacementskipio'…                                     
+[11:57:05] [I] I/O pins to be placed from                       openroad.py:1667
+               /tmp/tmpcmaj1i3_librelane/smoke_test_design/pin_                 
+               order.cfg. Returning state unaltered…                            
+[11:57:05] [V] Running 'OpenROAD.IOPlacement' at                    step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/25-open             
+               road-ioplacement'…                                               
+[11:57:05] [I] IO_PIN_ORDER_CFG is set. Skipping                openroad.py:1357
+               'OpenROAD.IOPlacement'…                                          
+[11:57:05] [V] Running 'Odb.CustomIOPlacement' at                   step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/26-odb-             
+               customioplacement'…                                              
+[11:57:05] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/26-odb-             
+               customioplacement/odb-customioplacement.log'…                    
+[11:57:06] [W] Overriding minimum distance 0.1 with 0.84 for pins on   odb.py:71
+               side N to avoid overlap.                                         
+[11:57:06] [V] Running 'Odb.ApplyDEFTemplate' at                    step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/27-odb-             
+               applydeftemplate'…                                               
+[11:57:06] [I] No DEF template provided, skipping                     odb.py:302
+               'Odb.ApplyDEFTemplate'…                                          
+[11:57:06] [V] Running 'OpenROAD.GlobalPlacement' at                step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/28-open             
+               road-globalplacement'…                                           
+[11:57:06] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/28-open             
+               road-globalplacement/openroad-globalplacement.log'…              
+[11:57:07] [V] Running 'Odb.WriteVerilogHeader' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/29-odb-             
+               writeverilogheader'…                                             
+[11:57:07] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/29-odb-             
+               writeverilogheader/odb-writeverilogheader.log'…                  
+[11:57:08] [V] Running 'Checker.PowerGridViolations' at             step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/30-chec             
+               ker-powergridviolations'…                                        
+[11:57:08] [I] Check for power grid violations (as reported by    checker.py:131
+               OpenROAD PSM- you may ignore these if LVS passes)                
+               clear.                                                           
+[11:57:08] [V] Running 'OpenROAD.STAMidPNR' at                      step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/31-open             
+               road-stamidpnr'…                                                 
+[11:57:08] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/31-open             
+               road-stamidpnr/openroad-stamidpnr.log'…                          
+[11:57:09] [V] Running 'OpenROAD.RepairDesignPostGPL' at            step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/32-open             
+               road-repairdesignpostgpl'…                                       
+[11:57:09] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/32-open             
+               road-repairdesignpostgpl/openroad-repairdesignpostgp             
+               l.log'…                                                          
+[11:57:10] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[11:57:10] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[11:57:11] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[11:57:11] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[11:57:12] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[11:57:12] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[11:57:14] [W] [RSZ-0020] found 2 floating nets.                 openroad.py:314
+[11:57:15] [V] Running 'Odb.ManualGlobalPlacement' at               step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/33-odb-             
+               manualglobalplacement'…                                          
+[11:57:15] [I] 'MANUAL_GLOBAL_PLACEMENTS' not set. Skipping          odb.py:1033
+               'Odb.ManualGlobalPlacement'…                                     
+[11:57:15] [V] Running 'OpenROAD.DetailedPlacement' at              step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/34-open             
+               road-detailedplacement'…                                         
+[11:57:15] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/34-open             
+               road-detailedplacement/openroad-detailedplacement.lo             
+               g'…                                                              
+[11:57:16] [V] Running 'OpenROAD.CTS' at                            step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/35-open             
+               road-cts'…                                                       
+[11:57:16] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/35-open             
+               road-cts/openroad-cts.log'…                                      
+[11:57:16] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[11:57:17] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[11:57:18] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[11:57:18] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[11:57:18] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[11:57:19] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[11:57:24] [V] Running 'OpenROAD.STAMidPNR-1' at                    step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/36-open             
+               road-stamidpnr-1'…                                               
+[11:57:24] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/36-open             
+               road-stamidpnr-1/openroad-stamidpnr-1.log'…                      
+[11:57:25] [V] Running 'OpenROAD.ResizerTimingPostCTS' at           step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/37-open             
+               road-resizertimingpostcts'…                                      
+[11:57:25] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/37-open             
+               road-resizertimingpostcts/openroad-resizertimingpost             
+               cts.log'…                                                        
+[11:57:26] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[11:57:26] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[11:57:27] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[11:57:27] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[11:57:28] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[11:57:28] [W] [STA-1140]                                        openroad.py:314
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/                
+               54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcu                
+               D/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_f                
+               d_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library                 
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[11:57:30] [V] Running 'OpenROAD.STAMidPNR-2' at                    step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/38-open             
+               road-stamidpnr-2'…                                               
+[11:57:30] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/38-open             
+               road-stamidpnr-2/openroad-stamidpnr-2.log'…                      
+[11:57:31] [V] Running 'OpenROAD.GlobalRouting' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/39-open             
+               road-globalrouting'…                                             
+[11:57:31] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/39-open             
+               road-globalrouting/openroad-globalrouting.log'…                  
+[11:57:31] [V] Running 'OpenROAD.CheckAntennas' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/40-open             
+               road-checkantennas'…                                             
+[11:57:31] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/40-open             
+               road-checkantennas/openroad-checkantennas.log'…                  
+[11:57:32] [I] Gating variable for step                        sequential.py:362
+               'OpenROAD.RepairDesignPostGRT' set to 'False'-                   
+               the step will be skipped.                                        
+[11:57:32] [I] Skipping step 'Repair Design (Post-Global       sequential.py:370
+               Routing)'…                                                       
+[11:57:32] [V] Running 'Odb.DiodesOnPorts' at                       step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/41-odb-             
+               diodesonports'…                                                  
+[11:57:32] [I] 'DIODE_ON_PORTS' is set to 'none': skipping            odb.py:820
+               'Odb.DiodesOnPorts'…                                             
+[11:57:32] [I] Gating variable for step                        sequential.py:362
+               'Odb.HeuristicDiodeInsertion' set to 'False'-                    
+               the step will be skipped.                                        
+[11:57:32] [I] Skipping step 'Heuristic Diode Insertion'…      sequential.py:370
+[11:57:32] [V] Running 'OpenROAD.RepairAntennas' at                 step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/42-open             
+               road-repairantennas'…                                            
+[11:57:32] [V] Running 'OpenROAD.DiodeInsertion' at                 step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/42-open             
+               road-repairantennas/1-openroad-diodeinsertion'…                  
+[11:57:32] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/42-open             
+               road-repairantennas/1-openroad-diodeinsertion/openro             
+               ad-diodeinsertion.log'…                                          
+[11:57:33] [V] Running 'OpenROAD.CheckAntennas' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/42-open             
+               road-repairantennas/2-openroad-checkantennas'…                   
+[11:57:33] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/42-open             
+               road-repairantennas/2-openroad-checkantennas/openroa             
+               d-checkantennas.log'…                                            
+[11:57:34] [I] Gating variable for step                        sequential.py:362
+               'OpenROAD.ResizerTimingPostGRT' set to 'False'-                  
+               the step will be skipped.                                        
+[11:57:34] [I] Skipping step 'Resizer Timing Optimizations     sequential.py:370
+               (Post-Global Routing)'…                                          
+[11:57:34] [V] Running 'OpenROAD.STAMidPNR-3' at                    step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/43-open             
+               road-stamidpnr-3'…                                               
+[11:57:34] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/43-open             
+               road-stamidpnr-3/openroad-stamidpnr-3.log'…                      
+[11:57:35] [V] Running 'OpenROAD.DetailedRouting' at                step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/44-open             
+               road-detailedrouting'…                                           
+[11:57:35] [I] Running TritonRoute with 14 threads…             openroad.py:2004
+[11:57:35] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/44-open             
+               road-detailedrouting/openroad-detailedrouting.log'…              
+[11:57:36] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via1                           
+[11:57:36] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via1                           
+[11:57:36] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via2                           
+[11:57:36] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via2                           
+[11:57:36] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via3                           
+[11:57:36] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via3                           
+[11:57:36] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via4                           
+[11:57:36] [W] [DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is    openroad.py:314
+               not supported. Skipping for layer Via4                           
+[11:57:45] [V] Running 'Odb.RemoveRoutingObstructions' at           step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/45-odb-             
+               removeroutingobstructions'…                                      
+[11:57:45] [I] 'ROUTING_OBSTRUCTIONS' is not defined. Skipping        odb.py:589
+               'Odb.RemoveRoutingObstructions'…                                 
+[11:57:45] [V] Running 'OpenROAD.CheckAntennas-1' at                step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/46-open             
+               road-checkantennas-1'…                                           
+[11:57:45] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/46-open             
+               road-checkantennas-1/openroad-checkantennas-1.log'…              
+[11:57:46] [V] Running 'Checker.TrDRC' at                           step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/47-chec             
+               ker-trdrc'…                                                      
+[11:57:46] [I] Check for Routing DRC errors clear.                checker.py:131
+[11:57:46] [V] Running 'Odb.ReportDisconnectedPins' at              step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/48-odb-             
+               reportdisconnectedpins'…                                         
+[11:57:46] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/48-odb-             
+               reportdisconnectedpins/odb-reportdisconnectedpins.lo             
+               g'…                                                              
+[11:57:46] [V] Running 'Checker.DisconnectedPins' at                step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/49-chec             
+               ker-disconnectedpins'…                                           
+[11:57:46] [I] Check for critical disconnected pins clear.        checker.py:131
+[11:57:46] [V] Running 'Odb.ReportWireLength' at                    step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/50-odb-             
+               reportwirelength'…                                               
+[11:57:46] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/50-odb-             
+               reportwirelength/odb-reportwirelength.log'…                      
+[11:57:47] [V] Running 'Checker.WireLength' at                      step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/51-chec             
+               ker-wirelength'…                                                 
+[11:57:47] [W] Threshold for Threshold-surpassing long wires is   checker.py:108
+               not set. The checker will be skipped.                            
+[11:57:47] [V] Running 'OpenROAD.FillInsertion' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/52-open             
+               road-fillinsertion'…                                             
+[11:57:47] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/52-open             
+               road-fillinsertion/openroad-fillinsertion.log'…                  
+[11:57:48] [V] Running 'Odb.CellFrequencyTables' at                 step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/53-odb-             
+               cellfrequencytables'…                                            
+[11:57:48] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/53-odb-             
+               cellfrequencytables/buffer_list.txt'…                            
+[11:57:49] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/53-odb-             
+               cellfrequencytables/odb-cellfrequencytables.log'…                
+[11:57:50] [V] Running 'OpenROAD.RCX' at                            step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/54-open             
+               road-rcx'…                                                       
+[11:57:50] [I] Running RCX for corners matching nom_*           openroad.py:2147
+               (/tmp/tmpcmaj1i3_librelane/smoke_test_design/run                 
+               s/RUN_2026-10-28_11-56-56/54-openroad-rcx/nom/rc                 
+               x.log)…                                                          
+[11:57:50] [I] Running RCX for corners matching max_*           openroad.py:2147
+               (/tmp/tmpcmaj1i3_librelane/smoke_test_design/run                 
+               s/RUN_2026-10-28_11-56-56/54-openroad-rcx/max/rc                 
+               x.log)…                                                          
+[11:57:50] [I] Running RCX for corners matching min_*           openroad.py:2147
+               (/tmp/tmpcmaj1i3_librelane/smoke_test_design/run                 
+               s/RUN_2026-10-28_11-56-56/54-openroad-rcx/min/rc                 
+               x.log)…                                                          
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/54-open             
+               road-rcx/max/rcx.log'…                                           
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/54-open             
+               road-rcx/min/rcx.log'…                                           
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/54-open             
+               road-rcx/nom/rcx.log'…                                           
+[11:57:50] [I] Finished RCX for corners matching max_*.         openroad.py:2156
+[11:57:50] [I] Finished RCX for corners matching nom_*.         openroad.py:2156
+[11:57:50] [I] Finished RCX for corners matching min_*.         openroad.py:2156
+[11:57:50] [V] Running 'OpenROAD.STAPostPNR' at                     step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr'…                                                
+[11:57:50] [I] Starting STA for the nom_tt_025C_5v00 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/nom_tt_025C_5v00/sta.log'…                       
+[11:57:50] [I] Starting STA for the nom_ss_125C_4v50 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/nom_ss_125C_4v50/sta.log'…                       
+[11:57:50] [I] Starting STA for the nom_ff_n40C_5v50 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Starting STA for the min_tt_025C_5v00 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/nom_ff_n40C_5v50/sta.log'…                       
+[11:57:50] [I] Starting STA for the min_ss_125C_4v50 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/min_tt_025C_5v00/sta.log'…                       
+[11:57:50] [I] Starting STA for the min_ff_n40C_5v50 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Starting STA for the max_tt_025C_5v00 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Starting STA for the max_ss_125C_4v50 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Starting STA for the max_ff_n40C_5v50 timing      openroad.py:749
+               corner…                                                          
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/min_ss_125C_4v50/sta.log'…                       
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/min_ff_n40C_5v50/sta.log'…                       
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/max_tt_025C_5v00/sta.log'…                       
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/max_ss_125C_4v50/sta.log'…                       
+[11:57:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/max_ff_n40C_5v50/sta.log'…                       
+[11:57:51] [I] Finished STA for the nom_tt_025C_5v00 timing      openroad.py:764
+               corner.                                                          
+[11:57:51] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/nom_tt_025C_5v00/filter_unannotated.             
+               log'…                                                            
+[11:57:51] [I] Finished STA for the nom_ss_125C_4v50 timing      openroad.py:764
+               corner.                                                          
+[11:57:51] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/nom_ss_125C_4v50/filter_unannotated.             
+               log'…                                                            
+[11:57:51] [I] Finished STA for the min_tt_025C_5v00 timing      openroad.py:764
+               corner.                                                          
+[11:57:51] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/min_tt_025C_5v00/filter_unannotated.             
+               log'…                                                            
+[11:57:52] [I] Finished STA for the min_ff_n40C_5v50 timing      openroad.py:764
+               corner.                                                          
+[11:57:52] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/min_ff_n40C_5v50/filter_unannotated.             
+               log'…                                                            
+[11:57:52] [I] Finished STA for the min_ss_125C_4v50 timing      openroad.py:764
+               corner.                                                          
+[11:57:52] [I] Finished STA for the max_ss_125C_4v50 timing      openroad.py:764
+               corner.                                                          
+[11:57:52] [I] Finished STA for the max_ff_n40C_5v50 timing      openroad.py:764
+               corner.                                                          
+[11:57:52] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/max_ff_n40C_5v50/filter_unannotated.             
+               log'…                                                            
+[11:57:52] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/max_ss_125C_4v50/filter_unannotated.             
+               log'…                                                            
+[11:57:52] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/min_ss_125C_4v50/filter_unannotated.             
+               log'…                                                            
+[11:57:52] [I] Finished STA for the max_tt_025C_5v00 timing      openroad.py:764
+               corner.                                                          
+[11:57:52] [I] Finished STA for the nom_ff_n40C_5v50 timing      openroad.py:764
+               corner.                                                          
+[11:57:52] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/max_tt_025C_5v00/filter_unannotated.             
+               log'…                                                            
+[11:57:52] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/55-open             
+               road-stapostpnr/nom_ff_n40C_5v50/filter_unannotated.             
+               log'…                                                            
+[11:57:52] [V] Running 'OpenROAD.IRDropReport' at                   step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/56-open             
+               road-irdropreport'…                                              
+[11:57:53] [W] 'VSRC_LOC_FILES' was not given a value, which    openroad.py:2249
+               may make the results of IR drop analysis                         
+               inaccurate. If you are not integrating a                         
+               top-level chip for manufacture, you may ignore                   
+               this warning, otherwise, see the documentation                   
+               for 'VSRC_LOC_FILES'.                                            
+[11:57:53] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/56-open             
+               road-irdropreport/openroad-irdropreport.log'…                    
+[11:57:54] [V] + analyze_power_grid -net VDD -voltage_file      openroad.py:2261
+               /tmp/tmpcmaj1i3_librelane/smoke_test_design/runs                 
+               /RUN_2026-10-28_11-56-56/56-openroad-irdroprepor                 
+               t/net-VDD.csv                                                    
+               [INFO PSM-0040] All shapes on net VDD are                        
+               connected.                                                       
+               ########## IR report #################                           
+               Net              : VDD                                           
+               Corner           : nom_tt_025C_5v00                              
+               Total power      : 1.29e-02 W                                    
+               Supply voltage   : 5.00e+00 V                                    
+               Worstcase voltage: 5.00e+00 V                                    
+               Average voltage  : 5.00e+00 V                                    
+               Average IR drop  : 8.91e-05 V                                    
+               Worstcase IR drop: 1.49e-04 V                                    
+               Percentage drop  : 0.00 %                                        
+               ######################################                           
+               + analyze_power_grid -net VSS -voltage_file                      
+               /tmp/tmpcmaj1i3_librelane/smoke_test_design/runs                 
+               /RUN_2026-10-28_11-56-56/56-openroad-irdroprepor                 
+               t/net-VSS.csv                                                    
+               [INFO PSM-0040] All shapes on net VSS are                        
+               connected.                                                       
+               ########## IR report #################                           
+               Net              : VSS                                           
+               Corner           : nom_tt_025C_5v00                              
+               Total power      : 1.29e-02 W                                    
+               Supply voltage   : 0.00e+00 V                                    
+               Worstcase voltage: 1.73e-04 V                                    
+               Average voltage  : 8.58e-05 V                                    
+               Average IR drop  : 8.58e-05 V                                    
+               Worstcase IR drop: 1.73e-04 V                                    
+               Percentage drop  : 0.00 %                                        
+               ######################################                           
+                                                                                
+[11:57:54] [V] Running 'Magic.StreamOut' at                         step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/57-magi             
+               c-streamout'…                                                    
+[11:57:54] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/57-magi             
+               c-streamout/magic-streamout.log'…                                
+[11:57:55] [V] Running 'KLayout.StreamOut' at                       step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/58-klay             
+               out-streamout'…                                                  
+[11:57:55] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/58-klay             
+               out-streamout/klayout-streamout.log'…                            
+[11:57:57] [V] Running 'KLayout.Render' at                          step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/59-klay             
+               out-render'…                                                     
+[11:57:57] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/59-klay             
+               out-render/klayout-render.log'…                                  
+[11:57:58] [V] Running 'Magic.WriteLEF' at                          step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/60-magi             
+               c-writelef'…                                                     
+[11:57:58] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/60-magi             
+               c-writelef/magic-writelef.log'…                                  
+[11:57:59] [V] Running 'Odb.CheckDesignAntennaProperties' at        step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/61-odb-             
+               checkdesignantennaproperties'…                                   
+[11:57:59] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/61-odb-             
+               checkdesignantennaproperties/odb-checkdesignantennap             
+               roperties.log'…                                                  
+[11:58:00] [V] Running 'KLayout.XOR' at                             step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/62-klay             
+               out-xor'…                                                        
+[11:58:00] [I] Running XOR with 14 threads…                       klayout.py:401
+[11:58:00] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/62-klay             
+               out-xor/klayout-xor.log'…                                        
+[11:58:02] [V] Running 'Checker.XOR' at                             step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/63-chec             
+               ker-xor'…                                                        
+[11:58:02] [I] Check for XOR differences clear.                   checker.py:131
+[11:58:02] [V] Running 'Magic.DRC' at                               step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/64-magi             
+               c-drc'…                                                          
+[11:58:02] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/64-magi             
+               c-drc/magic-drc.log'…                                            
+[11:58:04] [V] Running 'KLayout.DRC' at                             step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/65-klay             
+               out-drc'…                                                        
+[11:58:04] [W] KLAYOUT_DRC_RUNSET is unset. KLayout.DRC may not   klayout.py:634
+               be supported for the gf180mcuD PDK. This step will               
+               be skipped.                                                      
+[11:58:04] [V] Running 'Checker.MagicDRC' at                        step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/66-chec             
+               ker-magicdrc'…                                                   
+[11:58:04] [I] Check for Magic DRC errors clear.                  checker.py:131
+[11:58:04] [V] Running 'Checker.KLayoutDRC' at                      step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/67-chec             
+               ker-klayoutdrc'…                                                 
+[11:58:04] [W] The KLayout DRC errors metric was not found. Are   checker.py:133
+               you sure the relevant step was run?                              
+[11:58:04] [V] Running 'Magic.SpiceExtraction' at                   step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/68-magi             
+               c-spiceextraction'…                                              
+[11:58:04] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/68-magi             
+               c-spiceextraction/magic-spiceextraction.log'…                    
+[11:58:04] [V] Running 'Checker.IllegalOverlap' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/69-chec             
+               ker-illegaloverlap'…                                             
+[11:58:04] [I] Check for Magic Illegal Overlap errors clear.      checker.py:131
+[11:58:04] [V] Running 'Netgen.LVS' at                              step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/70-netg             
+               en-lvs'…                                                         
+[11:58:04] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/70-netg             
+               en-lvs/netgen-lvs.log'…                                          
+[11:58:05] [V] Running 'Checker.LVS' at                             step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/71-chec             
+               ker-lvs'…                                                        
+[11:58:05] [I] Check for LVS errors clear.                        checker.py:131
+[11:58:05] [I] Gating variable for step 'Yosys.EQY' set to     sequential.py:362
+               'False'- the step will be skipped.                               
+[11:58:05] [I] Skipping step 'Equivalence Check'…              sequential.py:370
+[11:58:05] [V] Running 'Checker.SetupViolations' at                 step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/72-chec             
+               ker-setupviolations'…                                            
+[11:58:05] [V] No setup violations found                          checker.py:628
+[11:58:05] [V] Running 'Checker.HoldViolations' at                  step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/73-chec             
+               ker-holdviolations'…                                             
+[11:58:05] [V] No hold violations found                           checker.py:628
+[11:58:05] [V] Running 'Checker.MaxSlewViolations' at               step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/74-chec             
+               ker-maxslewviolations'…                                          
+[11:58:05] [V] No max slew violations found                       checker.py:628
+[11:58:05] [V] Running 'Checker.MaxCapViolations' at                step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/75-chec             
+               ker-maxcapviolations'…                                           
+[11:58:05] [V] No max cap violations found                        checker.py:628
+[11:58:05] [V] Running 'Misc.ReportManufacturability' at            step.py:1138
+               '../../../../../../../../tmp/tmpcmaj1i3_librelane/sm             
+               oke_test_design/runs/RUN_2026-10-28_11-56-56/76-misc             
+               -reportmanufacturability'…                                       
+[11:58:05] [W] klayout__drc_error__count not reported. KLayout.DRC   misc.py:102
+               may have been skipped.                                           
+[11:58:05] [I] Saving views to                                      state.py:209
+               '/tmp/tmpcmaj1i3_librelane/smoke_test_design/runs/RU             
+               N_2026-10-28_11-56-56/final'…                                    
+[11:58:05] [I] Flow complete.                                  sequential.py:413
+
+
+[11:58:05] [W] The following warnings were generated by the flow:    flow.py:699
+[11:58:05] [W] [Odb.CustomIOPlacement] Overriding minimum distance   flow.py:701
+               0.1 with 0.84 for pins on side N to avoid overlap.               
+[11:58:05] [W] [OpenROAD.RepairDesignPostGPL] [STA-1140]             flow.py:701
+               /opt/proyecto3-tools/pdks/ciel/gf180mcu/versions/5443            
+               5919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.r            
+               ef/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v            
+               0__ff_n40C_5v50.lib line 17, library                             
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.            
+               (and 17 similar warnings)                                        
+[11:58:05] [W] [OpenROAD.RepairDesignPostGPL] [RSZ-0020] found 2     flow.py:701
+               floating nets.                                                   
+[11:58:05] [W] [OpenROAD.DetailedRouting] [DRT-0349] LEF58_ENCLOSURE flow.py:701
+               with no CUTCLASS is not supported. Skipping for layer            
+               Via1 (and 7 similar warnings)                                    
+[11:58:05] [W] [Checker.WireLength] Threshold for                    flow.py:701
+               Threshold-surpassing long wires is not set. The                  
+               checker will be skipped.                                         
+[11:58:05] [W] [OpenROAD.IRDropReport] 'VSRC_LOC_FILES' was not      flow.py:701
+               given a value, which may make the results of IR drop             
+               analysis inaccurate. If you are not integrating a                
+               top-level chip for manufacture, you may ignore this              
+               warning, otherwise, see the documentation for                    
+               'VSRC_LOC_FILES'.                                                
+[11:58:05] [W] [KLayout.DRC] KLAYOUT_DRC_RUNSET is unset.            flow.py:701
+               KLayout.DRC may not be supported for the gf180mcuD               
+               PDK. This step will be skipped.                                  
+[11:58:05] [W] [Checker.KLayoutDRC] The KLayout DRC errors metric    flow.py:701
+               was not found. Are you sure the relevant step was                
+               run?                                                             
+[11:58:05] [W] [Misc.ReportManufacturability]                        flow.py:701
+               klayout__drc_error__count not reported. KLayout.DRC              
+               may have been skipped.                                           
+[11:58:05] [I] Smoke test passed.                                __main__.py:297

@@ -1,0 +1,7 @@
+{
+  "strategies_equal": true,
+  "simulation_clock_ns": 100,
+  "accelerated": true,
+  "gate_simulation": false,
+  "trace_sha256": "2684a7fca176c75435ec7ec86718945d41796467640533a1234f9f64fa4f07c9"
+}
