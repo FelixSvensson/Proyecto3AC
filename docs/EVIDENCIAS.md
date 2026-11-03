@@ -5,7 +5,7 @@ Los archivos enlazados forman parte de la entrega. Las carpetas temporales
 
 | Resultado | Evidencia incluida | Cómo reproducir |
 |---|---|---|
-| Procedencia y protección P2 | [Protección](PROTECCION_PROYECTO2.md), [inconsistencia original](../results/environment/original_program_consistency.json) | `scripts/audit_original_program.py` |
+| Procedencia | [inconsistencia original](../results/environment/original_program_consistency.json) | `scripts/audit_original_program.py` |
 | Programa, 107 instrucciones | `sw/game.s`, `sw/game.hex`, `asic/generated/` | `make -f Makefile.asic generate` |
 | Tests originales, ROM, memoria y juego | `results/functional/`, `results/optimization/` | `make -f Makefile.asic verify` |
 | Netlists A/B ejecutados | `results/synthesis/A_sim_hier/gate_comparison.json`, `results/synthesis/B_sim_hier/gate_comparison.json` | `scripts/gate_verify.py A_sim_hier` y `B_sim_hier` |
@@ -22,8 +22,6 @@ Los archivos enlazados forman parte de la entrega. Las carpetas temporales
 | Ubicación de RF/ALU/contador | `results/layout/final_A_v2_p100_u40/cell_locations.json`, `docs/figures/` | `scripts/extract_layout.py`, `scripts/layout_capture.py`, bajo la AppImage |
 | Caso DRC antes/después | [Caso medido](../results/incidents/drc_case/case.json), `docs/figures/drc_before.png`, `drc_after.png` | `scripts/prepare_drc_case.py`, `scripts/drc_case_capture.py` |
 | Versiones y hashes | `results/environment/librelane_tool_versions.txt`, `results/snapshots/`, `results/runs/*/input_hashes_audited.json` | `scripts/audit_sources.py`, `scripts/hash_run_inputs.py` |
-| Archivos previstos para Git | `results/environment/publication_audit.json` | `scripts/audit_publication.py` (no añade, comitea ni publica archivos) |
-
 La comparación temporal usa siempre los nueve corners. Un código de salida cero
 del flujo no demuestra cierre: la corrida a 50 ns conserva WNS/TNS negativos y
 está clasificada como fallida. Las advertencias eléctricas de slew/fanout/capacitancia
@@ -33,4 +31,4 @@ no se dispone de un deck KLayout DRC configurado.
 La arquitectura B seleccionada terminó DRC Magic/LVS/antena y timing en nueve
 corners. Las pruebas B al 40 % se conservan como intentos incompletos, incluido
 el ECO de desvío detenido cuando B30 cerró routing y antena. No se atribuye
-signoff a esos intentos. El estado vigente está en [ESTADO_ACTUAL.md](ESTADO_ACTUAL.md).
+signoff a esos intentos.

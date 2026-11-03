@@ -2,20 +2,16 @@
 
 Universidad de los Andes, Arquitectura de Computadores, 2026-2. Grupo 15:
 Martin Heiremans, Felix Svensson y Juan Pablo Saavedra. Profesor: Jorge Gómez Mir.
-Los nombres proceden del informe real del Proyecto 2.
 
-**Estado:** implementación real en desarrollo; consultar
-[checklist](docs/CHECKLIST_ENTREGA.md). Las métricas canónicas de las corridas
-terminadas están en `results/summary.csv` y `results/runs/*/corners.csv`.
+Las métricas canónicas de las corridas terminadas están en `results/summary.csv`
+y `results/runs/*/corners.csv`.
 
 ## Procedencia
 
 Clon independiente de [Proyecto2AC](https://github.com/FelixSvensson/Proyecto2AC),
 main, revisión `67d0c48bcc115614a4029ff024277cb53bc30a05`, con historial completo.
 Se inspeccionó dev-game y se priorizó main por ser posterior y contener el
-informe entregado. **Proyecto 2 permanece intacto. No se ejecutó commit ni push.**
-El remoto proyecto2 conserva lectura pero tiene push localmente deshabilitado.
-origin apunta a Proyecto3AC; añadir esa URL no crea el repositorio remoto.
+informe entregado.
 
 ## Arquitectura y carpetas
 
@@ -59,8 +55,8 @@ sha256sum /opt/proyecto3-tools/librelane-3.0.17.AppImage
 ```
 
 SHA256 real: `c8ef5ae26b1fc53dd1dd30fe2f1a1da6ab0fdf471dd5a94c2b85d2b3db36833c`.
-La instalación de WSL se ejecutó como root; no se inventó contraseña ni identidad
-Git. Para otro usuario, el directorio de PDK debe permitir escritura a Ciel.
+La instalación de WSL se ejecutó como root. Para otro usuario, el directorio de
+PDK debe permitir escritura a Ciel.
 
 Herramientas del entorno coherente: LibreLane 3.0.17, Yosys 0.62, KLayout 0.30.7,
 Magic 8.3.623, Netgen 1.5.316, OpenROAD
@@ -161,30 +157,17 @@ incompletas y no se presentan como signoff aprobado. La comparación seleccionad
 usa 30 % en ambas arquitecturas; el final obligatorio de A conserva el 40 %.
 La síntesis jerárquica comparable midió A 147.741,3504 µm² y
 B 613.575,9616 µm²; no confundir con áreas LibreLane o posteriores a filler.
-Resultados posteriores y estado final: results/summary.csv y el checklist.
+Resultados posteriores y estado final: results/summary.csv.
 
-[Informe](docs/Informe_Proyecto3.pdf), [defensa](docs/Guia_Defensa_Proyecto3.pdf),
-[migración](docs/MIGRACION_ASIC.md), [protección de Proyecto 2](docs/PROTECCION_PROYECTO2.md).
+[Informe](docs/Informe_Proyecto3.pdf), [migración](docs/MIGRACION_ASIC.md).
 
-Para regenerar PDF instalar reportlab==4.4.9, matplotlib==3.11.2 y Pillow en un
-entorno Python de documentación; ejecutar scripts/build_documents.py y revisar
-las páginas renderizadas con Poppler. Linux utiliza Liberation Sans.
-`make -f Makefile.asic report` utiliza los datos curados incluidos en Git y no
-requiere carpetas temporales de las corridas. Ejecutar `make -f Makefile.asic collect`
-solo cuando se quiera actualizar las tablas desde corridas locales terminadas.
+El informe se redactó en Google Docs y se exportó a PDF. `make -f Makefile.asic report`
+(scripts/build_documents.py, requiere matplotlib) regenera los gráficos de docs/figures/
+a partir de los datos curados incluidos en Git, sin carpetas temporales de las corridas.
+Ejecutar `make -f Makefile.asic collect` solo cuando se quiera actualizar las tablas
+desde corridas locales terminadas.
 El [índice de evidencias](docs/EVIDENCIAS.md) relaciona cada resultado con sus archivos.
 `.gitattributes` fija los finales de línea de las fuentes medidas y las
 evidencias para conservar sus hashes al publicar y clonar desde Windows/Linux.
-
-## Publicación manual
-
-Seguir docs/PUBLICAR_MANUALMENTE.md al terminar la revisión. El alumno debe
-verificar su identidad y ejecutar personalmente commit y push. Puede necesitar
-crear primero el remoto Proyecto3AC vacío en GitHub. No publicar PDK, AppImage,
-caches, ondas sin comprimir ni carpetas asic/configs/runs. Los reportes curados
-en results/runs sí forman parte de la entrega. Se incluye únicamente un ZIP de
-checkpoint seleccionado, con diez vistas y hashes verificados, para reproducir
-la entrada de B; los demás ODB intermedios siguen excluidos. El estado contra cada criterio de
-la rúbrica se mantiene en docs/CHECKLIST_ENTREGA.md.
 
 Resultados actualizados: [tablas medidas](docs/RESULTADOS_MEDIDOS.md). El layout final fijo pasa 59 ns y falla 58 ns: 16,949153 MHz observados; la entrega utiliza 100 ns. El game.hex original sí contenía 75.000.000 ciclos, a diferencia del game.s posterior de main; ver results/environment/original_program_consistency.json.

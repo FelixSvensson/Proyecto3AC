@@ -11,16 +11,16 @@ Los archivos equivalentes ASIC se generan o implementan en asic/rtl/.
 | Lecturas de memoria síncronas | Sustituirlas por una conexión ROM combinacional directa rompería el protocolo del Espino. Se conserva el registro de salida en A; B también lee en flanco. | Pruebas de memoria y comparación de ciclos de ambas estrategias. |
 | Contador de ciclos | Se extrae cycle_counter sin cambiar incremento ni reset, para medir área y ubicar instancias. led_cycle_q continúa en el periférico. | Trazas del juego idénticas antes y después; prueba original del periférico. |
 
-No se atribuyen warnings inventados a estas incompatibilidades. No se ejecutó una
-corrida LibreLane del RTL FPGA original: los motivos anteriores proceden de la
-inspección directa del código y del contrato de las primitivas. La elaboración
-ASIC y la síntesis reales se registran en las corridas de results/runs/.
+No se ejecutó una corrida LibreLane del RTL FPGA original: los motivos anteriores
+proceden de la inspección directa del código y del contrato de las primitivas.
+La elaboración ASIC y la síntesis reales se registran en las corridas de
+results/runs/.
 
 La primera corrida ASIC reportó 14 advertencias de lint, todas sobre señales,
 bits o parámetros no usados: registro illegal_insn no expuesto, bits de dirección
 alineados, bits altos de escrituras de periféricos, códigos de desplazamientos
 deshabilitados y campos no utilizados. Log original con archivo y línea:
-asic/configs/runs/A_gf180_p100_u40/01-verilator-lint/verilator-lint.log.
+results/runs/A_gf180_p100_u40/evidence/01-verilator-lint/verilator-lint.log.
 Se permite continuar después de esas advertencias mediante
 ERROR_ON_LINTER_WARNINGS=false. No se deshabilitaron DRC, LVS, antena ni timing.
 
